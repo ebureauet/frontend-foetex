@@ -1,12 +1,37 @@
-//variables
-@import "variables";
+//fonts
+@import "components/icons";
+@import "components/fonts";
 
 //reset
-@import "normalize";
-
-//icon fonts
-@import "components/icons";
+@import "lib/normalize";
 
 //framework
-//@import "libs/framework-susy";
-@import "libs/framework-bootstrap";
+@import "lib/framework-bootstrap";
+@import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+//variables
+@import "components/variables";
+
+//mixins
+@import "mixins/font";
+
+//base styles
+body{
+  @include font('chevin-thin');
+  background-color : $foetex-ltgrey;
+}
+
+a:hover{
+  text-decoration : none;
+}
+
+
+.foetex-button{
+  border-radius : 6px;
+  background-color : $foetex-blue;
+  color : $foetex-white;
+  padding : 5px 15px;
+}
+
+//header
+@import "components/page-header";

@@ -1,0 +1,3 @@
+@mixin font($family: 'chevin-thin') {
+  font-family: ($family), arial, sans-serif;
+}

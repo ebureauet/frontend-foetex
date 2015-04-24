@@ -1,0 +1,28 @@
+//colors
+$foetex-black : #313131;
+$foetex-blue : #002d5a;
+$foetex-grey : #7e7e7e;
+$foetex-dkgrey : #444444;
+$foetex-ltgrey : #e1e1e1;
+$foetex-white : #ffffff;
+
+.color--normal{
+  background : transparent;
+  color : $foetex-blue;
+}
+
+//widths
+$foetex-max-width : 1260px;
+
+
+//heights
+$foetex-header-top-height : 50px;
+$foetex-header-main-height : 60px;
+
+//breakpoints
+$handhelds : (max-width ($screen-sm - 1)) ;
+$handhelds-tablets : (max-width ($screen-md - 1));
+$tablets : (min-width $screen-sm) (max-width ($screen-md - 1));
+$desktop : (min-width $screen-md);
+$largescreens : (min-width $screen-lg);
+$respond : (max-width $foetex-max-width);

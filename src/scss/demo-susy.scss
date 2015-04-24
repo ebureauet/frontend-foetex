@@ -1,11 +1,11 @@
 //reset
-@import "normalize";
+@import "lib/normalize";
 
 //icon fonts
 @import "components/icons";
 
 //gridsystem
-@import "libs/framework-susy";
+@import "lib/framework-susy";
 
 @include layout(12);
 

@@ -1,0 +1,99 @@
+.head{
+  .top{
+    background-color : $foetex-blue;
+    color : $foetex-white;
+    min-height : $foetex-header-top-height;
+    .row{
+      margin: 0 auto;
+      width : $foetex-max-width;
+      @include breakpoint($respond){
+        width : 100%;
+      }
+      .left{
+        span{
+          line-height : $foetex-header-top-height;
+          vertical-align : middle;
+          font-size : 25px;
+        }
+      }
+      .right{
+        @include font('chevin-medium');
+        nav{
+          line-height : $foetex-header-top-height;
+          text-align : right;
+          ul{
+            display : inline;
+            list-style : none;
+            vertical-align : middle;
+            li{
+              display : inline-block;
+              a{
+                color : inherit;
+                font-size : 16px;
+              }
+              &::after{
+                @include font('chevin-thin');
+                content : "|";
+                margin : 0px 10px;
+              }
+              &:last-child::after{
+                content : "|";
+                display : none!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main{
+    background-color : $foetex-white;
+    min-height : $foetex-header-main-height;
+    .row{
+      margin: 0 auto;
+      width : $foetex-max-width;
+      @include breakpoint($respond){
+        width : 100%;
+      }
+      .logo{
+        float : left;
+        a{
+          position : relative;
+          display : block;
+          img{
+            position : absolute;
+            left : 0px;
+            top : 10px;
+          }
+        }
+      }
+      .menu{
+        @include font('chevin-medium');
+        float : right;
+        line-height : $foetex-header-main-height;
+        color : $foetex-blue;
+        ul{
+          display : inline;
+          list-style : none;
+          vertical-align : middle;
+          li{
+            display : inline-block;
+            margin-right : 20px;
+            a{
+              color : inherit;
+              font-size : 20px;
+            }
+            &:last-child{
+              margin-right : 0px;
+            }
+            &.button{
+              a{
+                @extend .foetex-button;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
