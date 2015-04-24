@@ -49,7 +49,7 @@ in GitBash
 ~~~
 $ cd D:/projects/
 ~~~
-then it should like something like this:
+then it should look something like this:
 ~~~
 USER@USER-PC /d/projects
 $ _
@@ -60,7 +60,7 @@ $ git clone https://github.com/ebureauet/frontend-foetex.git
 ~~~
 This will download the repository to your 'D:/projects'. When done downloading, `cd` in to the folder like so:
 ~~~
-cd frontend-foetex
+$ cd frontend-foetex
 ~~~
 (power tip: type in first 3 letter of the file or folder and push 'tab' in your keyboard, it will autocomplete the filename or folder name for you.)
 
@@ -68,11 +68,11 @@ cd frontend-foetex
 
 Now, that your repository is created you must next set up the project workflow system by doing the following:
 
-1. Install Node dependencies
+First, install Node dependencies
 ~~~
 $ npm install
 ~~~
-2. Install Bower dependencies
+then, install Bower dependencies
 ~~~
 $ bower install
 ~~~
