@@ -1,6 +1,6 @@
-# E-bureauet Website Starter
+# Frontend for Foetex
 
-This is a starter project template for use by E-bureauet frontend developers.
+The frontend project for the Foetex client site.
 
 ## Tools
 
@@ -41,23 +41,38 @@ This is a starter project template for use by E-bureauet frontend developers.
 $ npm install -g node-gyp
 ~~~
 
-### Starting Your New Project
+### Clone This Repository
 
-If you wish to use this as a foundation to your new project then you will need to fork this repository, by doing so it will create a copy of this repository on your github account (note: the cloned repository will be open to public), at this point you should rename the cloned repository to a new name of your project.
+If you wish to collaborate with this project then you will need to clone this repository to your local machine. First, open up Git Bash or any Git commandline tool, and point `cd` the command prompt to a directory where you want this project to be located (e.g. 'D:/projects/'):
 
-If you want to contribute and help me improve this 'Website Starter' project. Just clone this repository to your local without forking and ask a request to make you an authorized contributor, so you can write changes to this repo.
-
-### Setting Up Local Repository
-
-1. Clone your new project repository (copy url from the 'HTTPS clone URL' on the github sidebar)
+in GitBash
 ~~~
-$ git clone https://github.com/teej043/your-new-project.git
+$ cd D:/projects/
 ~~~
-2. Install Node dependencies
+then it should like something like this:
+~~~
+USER@USER-PC /d/projects
+$ _
+~~~
+then type in and enter this:
+~~~
+$ git clone https://github.com/ebureauet/frontend-foetex.git
+~~~
+This will download the repository to your 'D:/projects'. When done downloading, `cd` in to the folder like so:
+~~~
+cd frontend-foetex
+~~~
+(power tip: type in first 3 letter of the file or folder and push 'tab' in your keyboard, it will autocomplete the filename or folder name for you.)
+
+### Setting Up the Project Workflow
+
+Now, that your repository is created you must next set up the project workflow system by doing the following:
+
+1. Install Node dependencies
 ~~~
 $ npm install
 ~~~
-3. Install Bower dependencies
+2. Install Bower dependencies
 ~~~
 $ bower install
 ~~~
@@ -71,3 +86,13 @@ $ gulp
 ~~~
 
 That's it!
+
+## Browse the Documentations:
+
+* [About](https://github.com/ebureauet/website-starter/blob/master/docs/documentation.md)
+* [Cheat Sheets](https://github.com/ebureauet/website-starter/blob/master/docs/thecheatsheets.md)
+* [Working Folders](https://github.com/ebureauet/website-starter/blob/master/docs/workingdirectory.md)
+* [Working with HTML](https://github.com/ebureauet/website-starter/blob/master/docs/workingwithhtml.md)
+* [Working with SASS](https://github.com/ebureauet/website-starter/blob/master/docs/workingwithsass.md)
+* [Working with JS](https://github.com/ebureauet/website-starter/blob/master/docs/workingwithjs.md)
+* [Working with Icon Fonts](https://github.com/ebureauet/website-starter/blob/master/docs/workingwithiconfonts.md)
