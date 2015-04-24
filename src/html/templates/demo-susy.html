@@ -1,0 +1,84 @@
+@@include('../demo-susy/demo-top.html',{
+  "pagetitle"  : "Demo"
+})
+
+
+<div class="page container">
+  <h1>Demo Page</h1>
+  <h2>This demo is using Susy grid power tool</h2>
+  <h3>Why should we start using Susy instead of Bootstrap?</h3>
+  <p>When Bootstrap and Foundation become the next popular thing in frontend development, they brought something new to the table, the ability for the html (not the just stylesheet) itself to setup the grid layout through different breakpoints possible using pre-made classes, I thought it was great at that, but that's not only where these frontend frameworks were good at, they can also provide your barebone site project an instant cosmetic upgrade using again some premade classes to apply themed styles to your element, not only that, it gives you access to quick javascript goodness in providing features like slideshows, carousels and modal popups to your site.</p>
+  <p>However, whenever I get a psd to html task and look at the design in psd file, it barely resembles any style themes available to Bootstrap, the designer may either be not aware of Bootstrap styles or really doing custom design for the sake of the brand that the design should be carrying. In the end, I will just end up doing overrides to existing bootstrap styles and just add new styles based on the design (which what I should be doing in the first place). Unless you're not using less or sass (css preprocessors so you can only pickup which bootstrap feature you want to use), you will have your site getting lots of unused styles adding up to your overhead. Fortunately, The Bootstrap website allows you to have a custom build of the Boostrap package you want to use for your site, for example you can only pick the 'grid system' to be in your Bootstrap framework package.</p>
+  <p>But then, going back to the HTML + CSS coupling style of Bootstrap where you could set the grid system by adding classes to your html element tags, wouldn't it be better to just have these kinds of grid system be handled by the stylesheet files and leave the html alone? Yes, I did said that I thought it was great thing to have, but the number of these classes can confuse the backend coders.</p>
+
+  @@include("../demo-susy/modules/block-module-one.html")
+  @@include("../demo-susy/modules/block-module-one.html")
+  @@include("../demo-susy/modules/block-module-one.html")
+
+  <div class="ribbon ribbon--dual">
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error praesentium similique, porro officia rem expedita dignissimos, quisquam? Suscipit, saepe, excepturi!</div>
+    <div>Quae consequuntur debitis tempore pariatur, perferendis placeat suscipit impedit dignissimos beatae! Nemo, asperiores distinctio vel mollitia nihil hic est sunt!</div>
+  </div>
+
+  <div class="ribbon ribbon--trio">
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error praesentium similique, porro officia rem expedita dignissimos, quisquam? Suscipit, saepe, excepturi!</div>
+    <div>Quae consequuntur debitis tempore pariatur, perferendis placeat suscipit impedit dignissimos beatae! Nemo, asperiores distinctio vel mollitia nihil hic est sunt!</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, temporibus, adipisci. Quibusdam iure, laboriosam excepturi porro eius sapiente earum consectetur.</div>
+  </div>
+
+  <ul class="nav">
+    <li class="test1">
+      <a href="">
+        <img src="" alt="">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aspernatur, praesentium quis. Nihil facere eveniet sunt autem, natus aspernatur sint placeat itaque optio molestias id. Rerum consequatur et tempore soluta!</span>
+      </a>
+    </li>
+    <li class="test2">
+      <a href="">
+        <img src="" alt="">
+        <span>Nobis distinctio incidunt, illum facere sint quaerat explicabo qui et quas sit odit enim nam ipsum fuga unde corporis voluptates tempora tenetur itaque ex? Sunt provident ut, minima et accusamus!</span>
+      </a>
+    </li>
+    <li class="test3">
+      <a href="">
+        <img src="" alt="">
+        <span>Nulla doloribus ratione molestiae esse aut, neque numquam earum consectetur dolorum cum ipsam cupiditate, adipisci cumque quo eum? Beatae, cum. Amet ab unde eaque deserunt molestiae quo similique voluptatum quisquam?</span>
+      </a>
+    </li>
+    <li class="test4">
+      <a href="">
+        <img src="" alt="">
+        <span>Voluptas quibusdam consequatur nostrum, accusantium neque eum laudantium vero perferendis, optio aperiam excepturi tempore tempora illum ut porro blanditiis numquam deserunt quas minus unde dolorum ipsam voluptatum maiores. Eveniet, sed?</span>
+      </a>
+    </li>
+    <li class="test5">
+      <a href="">
+        <img src="" alt="">
+        <span>Accusantium fugit, nihil laboriosam! Eos minima reprehenderit tenetur esse dignissimos officiis quam, praesentium recusandae facere, voluptas vel quas ducimus debitis quos inventore natus quia et perspiciatis provident sunt? Excepturi, consequatur.</span>
+      </a>
+    </li>
+  </ul>
+
+  @@include("../demo-susy/modules/block-module-one.html")
+
+  <ul class="icon-container">
+    <li class="icon-test0"></li>
+    <li class="icon-test1"></li>
+    <li class="icon-test2"></li>
+    <li class="icon-test3"></li>
+    <li class="icon-test4"></li>
+    <li class="icon-test5"></li>
+    <!--
+    <li class="icon-bottle"></li>
+    <li class="icon-clean"></li>
+    <li class="icon-grill"></li>
+    <li class="icon-knife"></li>
+    <li class="icon-meat"></li>
+    <li class="icon-utencil"></li>
+    <li class="icon-watch"></li>
+  -->
+  </ul>
+
+</div>
+
+@@include('../demo-susy/demo-bottom.html')
