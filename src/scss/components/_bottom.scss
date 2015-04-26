@@ -1,0 +1,38 @@
+&__bottom{
+  color : inherit;
+  font-size : 18px;
+  text-align : center;
+  .row{
+    margin: 0 auto;
+    width : $foetex-max-width;
+    @include breakpoint($respond){
+      width : 100%;
+    }
+    h4{
+      margin : 20px 0px;
+    }
+    ul{
+      @extend .ul-nostyle;
+    }
+    .bottom__menu--list{
+      padding-top : 30px;
+      padding-bottom : 20px;
+    }
+    .bottom__social{
+      border-top : 1px solid rgba(255,255,255,0.2);
+      padding-top : 30px;
+      padding-bottom : 20px;
+      h4{
+        font-size : 20px;
+      }
+      ul > li{
+        display : inline-block;
+        a{
+          color : inherit;
+          font-size : 60px;
+          line-height : 60px;
+        }
+      }
+    }
+  }
+}

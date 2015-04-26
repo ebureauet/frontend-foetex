@@ -26,12 +26,29 @@ a:hover{
 }
 
 
+.ul-nostyle{
+  list-style : none;
+  padding-left : 0px;
+}
+
 .foetex-button{
   border-radius : 6px;
   background-color : $foetex-blue;
   color : $foetex-white;
   padding : 5px 15px;
+  > .icon{
+    vertical-align : middle;
+    margin-right : 8px;
+  }
 }
 
 //header
 @import "components/page-header";
+
+
+.content{
+  min-height : 600px;
+}
+
+//footer
+@import "components/page-footer";

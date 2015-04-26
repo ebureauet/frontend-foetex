@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5496"
+   height="1000"
+   width="1000"
+   version="1.0"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="facebook.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="0.236"
+     inkscape:cx="500"
+     inkscape:cy="1008.4746"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5496" />
+  <metadata
+     id="metadata5594">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5498">
+    <font
+       id="font3933"
+       horiz-adv-x="1024">
+      <font-face
+         font-family="Community Icons"
+         id="font-face3935"
+         units-per-em="1024" />
+      <missing-glyph
+         id="missing-glyph3937"
+         d="M 462.92893,574.14215 574.14215,462.92893 537.07108,425.85785 425.85785,537.07108 z M 425.85785,462.92893 537.07108,574.14215 574.14215,537.07108 462.92893,425.85785 z" />
+      <glyph
+         d="m 635.35153,542.02253 -75.3515,-61.46405 140,-145.52862 0,-230.34065 100,0 0,251.13801 c 0,13.14874 -5.3924,26.21553 -14.6485,35.51249 z m 64.6485,416.53595 0,-176.73837 -481.25,-386.75256 c -11.6606,-9.37935 -18.7587,-24.23427 -18.75,-39.24033 l 0,-200.91042 100,0 0,176.73838 481.25,386.75257 c 11.6606,9.37935 18.7586,24.23426 18.75,39.24032 l 0,200.91041 z m -100,-791.08477 c -4.9022,-0.01 -9.6516,-3.20517 -11.5265,-7.75525 -1.8748,-4.55008 -0.763,-10.18281 2.6984,-13.66996 l 150,-150.6829 c 2.3134,-2.3179 5.5607,-3.6666 8.8281,-3.6666 3.2674,0 6.5147,1.3487 8.8281,3.6666 l 150,150.6829 c 3.4613,3.48715 4.5732,9.11988 2.6983,13.66996 -1.8748,4.55008 -6.6243,7.74564 -11.5264,7.75525 z m -500,0 c -4.902201,-0.01 -9.651701,-3.20517 -11.526501,-7.75525 -1.8748,-4.55008 -0.763,-10.18281 2.6983,-13.66996 L 241.17193,-4.6344 c 2.3134,-2.3179 5.5607,-3.6666 8.8281,-3.6666 3.2673,0 6.5147,1.3487 8.8281,3.6666 l 150,150.6829 c 3.4613,3.48715 4.5732,9.11988 2.6983,13.66996 -1.8748,4.55008 -6.6243,7.74564 -11.5264,7.75525 z"
+         unicode="F"
+         id="glyph3940"
+         glyph-name="glyph 1" />
+    </font>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <g
+     id="layer1" />
+  <path
+     id="rect4149"
+     d="m 257.39175,167.15196 c -43.59303,0 -78.67449,35.08159 -78.67449,78.67449 l 0,494.88029 c 0,43.5928 35.08146,78.67454 78.67449,78.67454 l 500.68712,0 c 43.59171,0 78.67445,-35.08174 78.67445,-78.67454 l 0,-494.88029 c 0,-43.5929 -35.08274,-78.67449 -78.67445,-78.67449 l -500.68712,0 z m 178.45646,135.84948 c 39.32525,0.46736 77.94335,15.7748 98.65586,34.70784 l -30.44404,60.88896 c -38.83642,-30.77866 -74.37984,-17.11488 -80.32163,1.67393 l 0,54.11492 82.8593,-0.83697 -11.82328,74.38499 -69.33665,0.86372 -2.53633,257.86296 -103.99361,0 0,-257.02603 -52.41395,0 1.69937,-76.94831 49.01521,-0.83696 0,-53.25172 c 16.33216,-72.25571 68.07654,-96.19794 118.63975,-95.59679 z"
+     style="fill:#000000;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+</svg>

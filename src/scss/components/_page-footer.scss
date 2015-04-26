@@ -1,0 +1,27 @@
+.foot{
+  background-color : $foetex-blue;
+  color : $foetex-white;
+  @import "components/bottom";
+  .colophon{
+    @include font('chevin-bold');
+    background-color : $foetex-white;
+    color : $foetex-blue;
+    font-size : 12px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    text-align : center;
+    a{
+      color : inherit;
+      &:hover{
+        text-decoration : none;
+      }
+      &::after{
+        content : "•";
+        margin : 0px 5px;
+      }
+      &:last-child::after{
+        display : none;
+      }
+    }
+  }
+}

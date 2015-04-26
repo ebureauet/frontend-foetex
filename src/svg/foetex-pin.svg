@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg5496"
+   height="1000"
+   width="1000"
+   version="1.0">
+  <metadata
+     id="metadata5594">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5498">
+    <font
+       id="font3933"
+       horiz-adv-x="1024">
+      <font-face
+         font-family="Your Icons"
+         id="font-face3935"
+         units-per-em="1024" />
+      <missing-glyph
+         id="missing-glyph3937"
+         d="M0,0h1000v1024h-1000z" />
+    </font>
+  </defs>
+  <g
+     id="layer1" />
+  <path
+     id="path4171"
+     d="M 461.4805,748.52197 C 445.55798,658.01726 431.83449,580.14935 430.98387,575.48217 l -1.54657,-8.48581 -9.49668,-3.27501 C 399.5502,556.68954 375.13169,543.36675 357.11984,529.44631 261.8646,455.8282 232.84732,317.06727 289.47912,205.98764 322.413,141.38986 381.03037,95.474796 447.86211,81.925951 545.4263,62.146694 643.6534,112.18789 691.50681,206.04928 c 43.13097,84.59865 37.54293,187.64494 -14.41863,265.88712 -28.43179,42.81174 -70.12615,75.81568 -115.89491,91.73872 -5.12448,1.78283 -9.43009,3.35433 -9.56799,3.49226 -0.13793,0.13791 -13.85627,77.64146 -30.48523,172.2301 -16.62893,94.58865 -30.34134,172.36165 -30.47198,172.82896 -0.13064,0.46723 -13.26504,-73.19977 -29.18757,-163.70447 z"
+     style="fill:#000000" />
+</svg>

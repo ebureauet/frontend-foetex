@@ -22,23 +22,32 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == test0 {
+	@if $filename == foetex-blank {
 		$char: "\E001";
 	}
-	@if $filename == test1 {
+	@if $filename == foetex-book {
 		$char: "\E002";
 	}
-	@if $filename == test2 {
+	@if $filename == foetex-check {
 		$char: "\E003";
 	}
-	@if $filename == test3 {
+	@if $filename == foetex-close {
 		$char: "\E004";
 	}
-	@if $filename == test4 {
+	@if $filename == foetex-facebook {
 		$char: "\E005";
 	}
-	@if $filename == test5 {
+	@if $filename == foetex-instagram {
 		$char: "\E006";
+	}
+	@if $filename == foetex-pin {
+		$char: "\E007";
+	}
+	@if $filename == foetex-pinterest {
+		$char: "\E008";
+	}
+	@if $filename == foetex-youtube {
+		$char: "\E009";
 	}
 
 	@return $char;
@@ -51,21 +60,30 @@
 	}
 }
 
-.icon-test0 {
-	@include icon(test0);
+.icon-foetex-blank {
+	@include icon(foetex-blank);
 }
-.icon-test1 {
-	@include icon(test1);
+.icon-foetex-book {
+	@include icon(foetex-book);
 }
-.icon-test2 {
-	@include icon(test2);
+.icon-foetex-check {
+	@include icon(foetex-check);
 }
-.icon-test3 {
-	@include icon(test3);
+.icon-foetex-close {
+	@include icon(foetex-close);
 }
-.icon-test4 {
-	@include icon(test4);
+.icon-foetex-facebook {
+	@include icon(foetex-facebook);
 }
-.icon-test5 {
-	@include icon(test5);
+.icon-foetex-instagram {
+	@include icon(foetex-instagram);
+}
+.icon-foetex-pin {
+	@include icon(foetex-pin);
+}
+.icon-foetex-pinterest {
+	@include icon(foetex-pinterest);
+}
+.icon-foetex-youtube {
+	@include icon(foetex-youtube);
 }

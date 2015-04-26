@@ -171,8 +171,8 @@ gulp.task('iconfont', function(){
       fixedWidth: true,
       centerHorizontally: true,
       normalize: true,
-      fontHeight:500,
-      descent: 0
+      fontHeight:1000
+      //descent: 0
      }))
     .pipe(gulp.dest('src/fonts/icons/'));
 });

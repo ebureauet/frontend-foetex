@@ -22,8 +22,8 @@
           line-height : $foetex-header-top-height;
           text-align : right;
           ul{
+            @extend .ul-nostyle;
             display : inline;
-            list-style : none;
             vertical-align : middle;
             li{
               display : inline-block;
@@ -73,8 +73,8 @@
         line-height : $foetex-header-main-height;
         color : $foetex-blue;
         ul{
+          @extend .ul-nostyle;
           display : inline;
-          list-style : none;
           vertical-align : middle;
           li{
             display : inline-block;
