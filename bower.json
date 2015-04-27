@@ -16,7 +16,8 @@
     "breakpoint-sass": "~2.5.0",
     "susy": "~2.2.2",
     "bootstrap-sass": "~3.3.4",
-    "owl.carousel": "smashingboxes/OwlCarousel2"
+    "owl.carousel": "smashingboxes/OwlCarousel2",
+    "tablesaw": "~1.0.4"
   },
   "devDependencies": {
     "breakpoint-sass": "~2.5.0"

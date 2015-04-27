@@ -6,8 +6,7 @@
 @import "lib/normalize";
 
 //framework
-@import "lib/framework-bootstrap";
-@import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "lib/frameworks";
 
 //variables
 @import "components/variables";
@@ -42,13 +41,22 @@ a:hover{
   }
 }
 
-//header
-@import "components/page-header";
 
-
-.content{
-  min-height : 600px;
+.container-fluid{
+  > .row{
+    margin: 0 auto;
+    width : $foetex-max-width;
+    @include breakpoint($respond){
+      width : 100%;
+    }
+  }
 }
 
+//header
+@import "general/page-header";
+
+//content
+@import "general/page-content";
+
 //footer
-@import "components/page-footer";
+@import "general/page-footer";

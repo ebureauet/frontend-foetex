@@ -22,32 +22,50 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == foetex-blank {
+	@if $filename == foetex-barrel {
 		$char: "\E001";
 	}
-	@if $filename == foetex-book {
+	@if $filename == foetex-beverages {
 		$char: "\E002";
 	}
-	@if $filename == foetex-check {
+	@if $filename == foetex-blank {
 		$char: "\E003";
 	}
-	@if $filename == foetex-close {
+	@if $filename == foetex-book {
 		$char: "\E004";
 	}
-	@if $filename == foetex-facebook {
+	@if $filename == foetex-check {
 		$char: "\E005";
 	}
-	@if $filename == foetex-instagram {
+	@if $filename == foetex-clock {
 		$char: "\E006";
 	}
-	@if $filename == foetex-pin {
+	@if $filename == foetex-close {
 		$char: "\E007";
 	}
-	@if $filename == foetex-pinterest {
+	@if $filename == foetex-cookingpot {
 		$char: "\E008";
 	}
-	@if $filename == foetex-youtube {
+	@if $filename == foetex-ducky {
 		$char: "\E009";
+	}
+	@if $filename == foetex-facebook {
+		$char: "\E00A";
+	}
+	@if $filename == foetex-instagram {
+		$char: "\E00B";
+	}
+	@if $filename == foetex-pin {
+		$char: "\E00C";
+	}
+	@if $filename == foetex-pinterest {
+		$char: "\E00D";
+	}
+	@if $filename == foetex-receipe {
+		$char: "\E00E";
+	}
+	@if $filename == foetex-youtube {
+		$char: "\E00F";
 	}
 
 	@return $char;
@@ -60,6 +78,12 @@
 	}
 }
 
+.icon-foetex-barrel {
+	@include icon(foetex-barrel);
+}
+.icon-foetex-beverages {
+	@include icon(foetex-beverages);
+}
 .icon-foetex-blank {
 	@include icon(foetex-blank);
 }
@@ -69,8 +93,17 @@
 .icon-foetex-check {
 	@include icon(foetex-check);
 }
+.icon-foetex-clock {
+	@include icon(foetex-clock);
+}
 .icon-foetex-close {
 	@include icon(foetex-close);
+}
+.icon-foetex-cookingpot {
+	@include icon(foetex-cookingpot);
+}
+.icon-foetex-ducky {
+	@include icon(foetex-ducky);
 }
 .icon-foetex-facebook {
 	@include icon(foetex-facebook);
@@ -83,6 +116,9 @@
 }
 .icon-foetex-pinterest {
 	@include icon(foetex-pinterest);
+}
+.icon-foetex-receipe {
+	@include icon(foetex-receipe);
 }
 .icon-foetex-youtube {
 	@include icon(foetex-youtube);
