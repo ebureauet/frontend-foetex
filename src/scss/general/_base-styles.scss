@@ -46,6 +46,11 @@ a:hover{
   padding-left : 0px;
 }
 
+
+
+
+
+
 .foetex-button{
   border-radius : 6px;
   background-color : $foetex-blue;
@@ -150,5 +155,35 @@ a:hover{
     border-top : 1px solid $foetex-grey;
     border-bottom : 1px solid $foetex-grey;
   }
+}
 
+
+
+
+.content{
+  background-image : url('../images/bg.jpg');
+  background-repeat : no-repeat;
+  background-size : 100% auto;
+  background-position : top center;
+}
+
+
+.ribbon-masthead{
+  // padding-top : 50px;
+  // padding-bottom : 50px;
+  background-color : transparent;
+  color : $foetex-white;
+  text-align : center;
+}
+
+.ribbon-kitchensink{
+  .row{
+    background-color : $foetex-dkwhite;
+    padding-left : 40px;
+    padding-right : 40px;
+    &:first-child{
+      border-top-left-radius : $foetex-content-body;
+      border-top-right-radius : $foetex-content-body;
+    }
+  }
 }
