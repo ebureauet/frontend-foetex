@@ -85,8 +85,7 @@ gulp.task('scripts', function() {
     //.pipe(uglify({compress: {pure_funcs: [ 'console.log' ]}}))
     .pipe(gulp.dest('src/js'));
     //.pipe(reload({stream:true}));
-});
-*/
+});*/
 
 gulp.task('scripts', function() {
   return glob('./src/js/main-**.js', function(err, files) {

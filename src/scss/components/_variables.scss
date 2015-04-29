@@ -6,6 +6,20 @@ $foetex-dkgrey : #444444;
 $foetex-ltgrey : #e1e1e1;
 $foetex-white : #ffffff;
 
+
+//default font sizes
+$foetex-h1 : 46px;
+$foetex-h2 : 24px;
+$foetex-h3 : 26px;
+$foetex-p : 18px;
+$foetex-p-article : 22px;
+$foetex-icon-md : 32px;
+$foetex-input-md : 22px;
+
+
+//border-radius
+$foetex-form-radius : 8px;
+
 .color--normal{
   background : transparent;
   color : $foetex-blue;

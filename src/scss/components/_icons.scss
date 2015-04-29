@@ -25,101 +25,125 @@
 	@if $filename == foetex-arrowdown {
 		$char: "\E001";
 	}
-	@if $filename == foetex-barrel {
+	@if $filename == foetex-arrowleft {
 		$char: "\E002";
 	}
-	@if $filename == foetex-beef {
+	@if $filename == foetex-arrowright {
 		$char: "\E003";
 	}
-	@if $filename == foetex-beverages {
+	@if $filename == foetex-arrowup {
 		$char: "\E004";
 	}
-	@if $filename == foetex-blank {
+	@if $filename == foetex-barrel {
 		$char: "\E005";
 	}
-	@if $filename == foetex-book {
+	@if $filename == foetex-beef {
 		$char: "\E006";
 	}
-	@if $filename == foetex-check {
+	@if $filename == foetex-beverages {
 		$char: "\E007";
 	}
-	@if $filename == foetex-chicken {
+	@if $filename == foetex-blank {
 		$char: "\E008";
 	}
-	@if $filename == foetex-clock {
+	@if $filename == foetex-book {
 		$char: "\E009";
 	}
-	@if $filename == foetex-close {
+	@if $filename == foetex-check {
 		$char: "\E00A";
 	}
-	@if $filename == foetex-cookingpot {
+	@if $filename == foetex-checkbox-checked {
 		$char: "\E00B";
 	}
-	@if $filename == foetex-crab {
+	@if $filename == foetex-chicken {
 		$char: "\E00C";
 	}
-	@if $filename == foetex-diner {
+	@if $filename == foetex-clock {
 		$char: "\E00D";
 	}
-	@if $filename == foetex-ducky {
+	@if $filename == foetex-close {
 		$char: "\E00E";
 	}
-	@if $filename == foetex-facebook {
+	@if $filename == foetex-cookingpot {
 		$char: "\E00F";
 	}
-	@if $filename == foetex-fish {
+	@if $filename == foetex-crab {
 		$char: "\E010";
 	}
-	@if $filename == foetex-fruits {
+	@if $filename == foetex-diner {
 		$char: "\E011";
 	}
-	@if $filename == foetex-geography {
+	@if $filename == foetex-dropdown {
 		$char: "\E012";
 	}
-	@if $filename == foetex-grapevine {
+	@if $filename == foetex-dropleft {
 		$char: "\E013";
 	}
-	@if $filename == foetex-instagram {
+	@if $filename == foetex-dropright {
 		$char: "\E014";
 	}
-	@if $filename == foetex-mail {
+	@if $filename == foetex-dropup {
 		$char: "\E015";
 	}
-	@if $filename == foetex-pin {
+	@if $filename == foetex-ducky {
 		$char: "\E016";
 	}
-	@if $filename == foetex-pinterest {
+	@if $filename == foetex-facebook {
 		$char: "\E017";
 	}
-	@if $filename == foetex-pork {
+	@if $filename == foetex-fish {
 		$char: "\E018";
 	}
-	@if $filename == foetex-rabbit {
+	@if $filename == foetex-fruits {
 		$char: "\E019";
 	}
-	@if $filename == foetex-receipe {
+	@if $filename == foetex-geography {
 		$char: "\E01A";
 	}
-	@if $filename == foetex-sheep {
+	@if $filename == foetex-grapevine {
 		$char: "\E01B";
 	}
-	@if $filename == foetex-snacks {
+	@if $filename == foetex-instagram {
 		$char: "\E01C";
 	}
-	@if $filename == foetex-star {
+	@if $filename == foetex-mail {
 		$char: "\E01D";
 	}
-	@if $filename == foetex-toscana {
+	@if $filename == foetex-pin {
 		$char: "\E01E";
 	}
-	@if $filename == foetex-vegetable {
+	@if $filename == foetex-pinterest {
 		$char: "\E01F";
 	}
-	@if $filename == foetex-wine {
+	@if $filename == foetex-pork {
 		$char: "\E020";
 	}
-	@if $filename == foetex-youtube {
+	@if $filename == foetex-rabbit {
 		$char: "\E021";
+	}
+	@if $filename == foetex-receipe {
+		$char: "\E022";
+	}
+	@if $filename == foetex-sheep {
+		$char: "\E023";
+	}
+	@if $filename == foetex-snacks {
+		$char: "\E024";
+	}
+	@if $filename == foetex-star {
+		$char: "\E025";
+	}
+	@if $filename == foetex-toscana {
+		$char: "\E026";
+	}
+	@if $filename == foetex-vegetable {
+		$char: "\E027";
+	}
+	@if $filename == foetex-wine {
+		$char: "\E028";
+	}
+	@if $filename == foetex-youtube {
+		$char: "\E029";
 	}
 
 	@return $char;
@@ -134,6 +158,15 @@
 
 .icon-foetex-arrowdown {
 	@include icon(foetex-arrowdown);
+}
+.icon-foetex-arrowleft {
+	@include icon(foetex-arrowleft);
+}
+.icon-foetex-arrowright {
+	@include icon(foetex-arrowright);
+}
+.icon-foetex-arrowup {
+	@include icon(foetex-arrowup);
 }
 .icon-foetex-barrel {
 	@include icon(foetex-barrel);
@@ -153,6 +186,9 @@
 .icon-foetex-check {
 	@include icon(foetex-check);
 }
+.icon-foetex-checkbox-checked {
+	@include icon(foetex-checkbox-checked);
+}
 .icon-foetex-chicken {
 	@include icon(foetex-chicken);
 }
@@ -170,6 +206,18 @@
 }
 .icon-foetex-diner {
 	@include icon(foetex-diner);
+}
+.icon-foetex-dropdown {
+	@include icon(foetex-dropdown);
+}
+.icon-foetex-dropleft {
+	@include icon(foetex-dropleft);
+}
+.icon-foetex-dropright {
+	@include icon(foetex-dropright);
+}
+.icon-foetex-dropup {
+	@include icon(foetex-dropup);
 }
 .icon-foetex-ducky {
 	@include icon(foetex-ducky);

@@ -1,7 +1,7 @@
 /*===== BOOTSTRAP ======*/
 
 // Bootstrap variables
-@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "bootstrap-variables";
 
 // Mixins
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -18,13 +18,13 @@
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
-// @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
 // Components
-// @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
-// @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
 // @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
-// @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 // @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";

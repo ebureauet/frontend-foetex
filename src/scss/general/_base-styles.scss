@@ -1,0 +1,154 @@
+.foetex-h1{
+  @include font('chevin-medium');
+  font-size : $foetex-h1;
+}
+
+.foetex-h2{
+  @include font('chevin-demibold');
+  font-size : $foetex-h2;
+}
+
+.foetex-h3{
+  @include font('chevin-light');
+  font-size : $foetex-h3;
+}
+
+.foetex-p{
+  @include font('chevin-thin');
+  font-size : $foetex-p;
+}
+
+
+body{
+  @extend .foetex-p;
+  background-color : $foetex-ltgrey;
+}
+
+h1{
+  @extend .foetex-h1;
+}
+
+h2{
+  @extend .foetex-h2;
+}
+
+h3{
+  @extend .foetex-h3;
+}
+
+a:hover{
+  text-decoration : none;
+}
+
+
+.ul-nostyle{
+  list-style : none;
+  padding-left : 0px;
+}
+
+.foetex-button{
+  border-radius : 6px;
+  background-color : $foetex-blue;
+  color : $foetex-white;
+  padding : 5px 15px;
+  > .icon{
+    vertical-align : middle;
+    margin-right : 8px;
+  }
+}
+
+
+.container-fluid{
+  > .row{
+    margin: 0 auto;
+    width : $foetex-max-width;
+    @include breakpoint($respond){
+      width : 100%;
+    }
+  }
+}
+
+/*== FOETEX BOOTSTRAP CUSTOM ==*/
+
+.btn-foetex-default {
+  @include button-variant($foetex-white, $foetex-blue, $foetex-blue);
+}
+
+.btn-foetex-lg {
+  @include button-size($padding-large-vertical, $padding-large-horizontal, 22px, 22px, $border-radius-large);
+  @include font('chevin-medium');
+}
+
+.btn-foetex-md {
+  @include button-size($padding-large-vertical, $padding-large-horizontal, 20px, 20px, $border-radius-large);
+}
+
+.btn-foetex-sm {
+  @include button-size($padding-large-vertical, $padding-large-horizontal, 18px, 18px, $border-radius-large);
+}
+
+
+
+
+.form-foetex--white{
+  padding : 20px;
+  background-color : $foetex-white;
+  .form-group{
+    .form-control{
+      @include font('chevin-medium');
+      background-color : $foetex-ltgrey;
+      color : $foetex-dkgrey;
+      box-shadow : none;
+      border-radius : $foetex-form-radius;
+      height : auto;
+      font-size : $foetex-input-md;
+      border : none;
+    }
+  }
+  button[type="submit"]{
+    @include font('chevin-medium');
+    font-size : $foetex-input-md;
+    border-radius : $foetex-form-radius;
+  }
+}
+
+
+
+.collapse-bar{
+  border-top : 1px solid $foetex-grey;
+  border-bottom : 0px solid $foetex-grey;
+  .collapse{
+    padding-bottom : 0.83em;
+  }
+  &__button{
+    cursor : pointer;
+    span{
+      font-size : $foetex-icon-md;
+      line-height : $foetex-icon-md;
+      color : $foetex-blue;
+      &.up{
+        display : block;
+      }
+      &.down{
+        display : none;
+      }
+    }
+    &.collapsed{
+      .up{
+        display : none;
+      }
+      .down{
+        display : block;
+      }
+    }
+  }
+  &:first-child{
+    border-top : 1px solid $foetex-grey;
+    border-bottom : 0px solid $foetex-grey;
+  }
+  &:last-child{
+    border-top : 1px solid $foetex-grey;
+    border-bottom : 1px solid $foetex-grey;
+  }
+
+}
