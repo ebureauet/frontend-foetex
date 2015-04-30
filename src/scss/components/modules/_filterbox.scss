@@ -1,0 +1,15 @@
+//======= module: filterbox ======
+.filterbox{
+  text-align : center;
+  &__button{
+    @extend .col-sm-3;
+    @extend .col-md-2;
+    padding-bottom : $grid-gutter-width;
+    .btn{
+      @include font('chevin-medium');
+      width : 100%;
+      box-shadow : none;
+      text-transform : uppercase;
+    }
+  }
+}

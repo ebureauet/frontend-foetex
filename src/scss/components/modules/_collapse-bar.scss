@@ -1,0 +1,37 @@
+.collapse-bar{
+  border-top : 1px solid $foetex-grey;
+  border-bottom : 0px solid $foetex-grey;
+  .collapse{
+    padding-bottom : 0.83em;
+  }
+  &__button{
+    cursor : pointer;
+    span{
+      font-size : $foetex-icon-md;
+      line-height : $foetex-icon-md;
+      color : $foetex-blue;
+      &.up{
+        display : block;
+      }
+      &.down{
+        display : none;
+      }
+    }
+    &.collapsed{
+      .up{
+        display : none;
+      }
+      .down{
+        display : block;
+      }
+    }
+  }
+  &:first-child{
+    border-top : 1px solid $foetex-grey;
+    border-bottom : 0px solid $foetex-grey;
+  }
+  &:last-child{
+    border-top : 1px solid $foetex-grey;
+    border-bottom : 1px solid $foetex-grey;
+  }
+}

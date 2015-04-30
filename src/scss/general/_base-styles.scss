@@ -79,6 +79,14 @@ a:hover{
   @include button-variant($foetex-white, $foetex-blue, $foetex-blue);
 }
 
+.btn-foetex-filter {
+  @include button-variant($foetex-white, $foetex-blue, $foetex-blue);
+  text-transform : uppercase;
+  min-width : 350px;
+  @include button-size($padding-large-vertical + 10, $padding-large-horizontal, 18px, 18px, $border-radius-large);
+  @include font('chevin-medium');
+}
+
 .btn-foetex-lg {
   @include button-size($padding-large-vertical, $padding-large-horizontal, 22px, 22px, $border-radius-large);
   @include font('chevin-medium');
@@ -119,43 +127,7 @@ a:hover{
 
 
 
-.collapse-bar{
-  border-top : 1px solid $foetex-grey;
-  border-bottom : 0px solid $foetex-grey;
-  .collapse{
-    padding-bottom : 0.83em;
-  }
-  &__button{
-    cursor : pointer;
-    span{
-      font-size : $foetex-icon-md;
-      line-height : $foetex-icon-md;
-      color : $foetex-blue;
-      &.up{
-        display : block;
-      }
-      &.down{
-        display : none;
-      }
-    }
-    &.collapsed{
-      .up{
-        display : none;
-      }
-      .down{
-        display : block;
-      }
-    }
-  }
-  &:first-child{
-    border-top : 1px solid $foetex-grey;
-    border-bottom : 0px solid $foetex-grey;
-  }
-  &:last-child{
-    border-top : 1px solid $foetex-grey;
-    border-bottom : 1px solid $foetex-grey;
-  }
-}
+
 
 
 
@@ -165,25 +137,103 @@ a:hover{
   background-repeat : no-repeat;
   background-size : 100% auto;
   background-position : top center;
-}
 
-
-.ribbon-masthead{
-  // padding-top : 50px;
-  // padding-bottom : 50px;
-  background-color : transparent;
-  color : $foetex-white;
-  text-align : center;
-}
-
-.ribbon-kitchensink{
-  .row{
-    background-color : $foetex-dkwhite;
-    padding-left : 40px;
-    padding-right : 40px;
-    &:first-child{
-      border-top-left-radius : $foetex-content-body;
-      border-top-right-radius : $foetex-content-body;
+  .ribbon{
+    &:nth-child(2){
+      .row:first-child{
+        border-top-left-radius : $foetex-content-body;
+        border-top-right-radius : $foetex-content-body;
+      }
+    }
+    .row{
+      padding-top : 50px;
+      padding-bottom : 30px;
     }
   }
 }
+
+
+
+
+.content{
+  $bgcolor : $foetex-blue;
+  @each $foetex-cat-color, $bgcolor in $foetex-cat-colors {
+    &.category-#{$foetex-cat-color} {
+      .ribbon{
+        .filterbox{
+          &__button{
+            .btn{
+              @include button-variant($foetex-white, desaturate(darken($bgcolor,20%),15%), desaturate(darken($bgcolor,20%),15%));
+              &.selected{
+                @include button-variant($foetex-white, $bgcolor, $bgcolor);
+              }
+            }
+          }
+          &::after{
+            border-bottom : 1px solid darken($bgcolor, 20%);
+            width : 100%;
+            padding : 0px ($grid-gutter-width / 2);
+          }
+        }
+        .button-see-all{
+          text-align : center;
+          .btn{
+            @include button-variant($foetex-white, $bgcolor, $bgcolor);
+            box-shadow : 0px 3px 0px 0px desaturate(darken($bgcolor, 20%),15%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.content{
+
+  .ribbon-transparent{
+    // padding-top : 50px;
+    // padding-bottom : 50px;
+    background-color : transparent;
+    color : $foetex-white;
+    text-align : center;
+  }
+
+  .ribbon-kitchensink{
+    .row{
+      background-color : $foetex-dkwhite;
+      padding-left : 40px;
+      padding-right : 40px;
+      &:first-child{
+        border-top-left-radius : $foetex-content-body;
+        border-top-right-radius : $foetex-content-body;
+      }
+    }
+  }
+
+  .ribbon-cover{
+    background-position : top center;
+    background-size : cover;
+    background-repeat : none;
+    .row{
+      background-color : transparent;
+      padding-left : 40px;
+      padding-right : 40px;
+    }
+  }
+
+  .ribbon-cover--filterbox{
+    .row{
+      background-image : url($foetex-bg-img-white);
+      background-repeat : repeat;
+    }
+    .filterbox{
+      padding-bottom : 0px;
+    }
+    .button-see-all{
+      padding-top : 0px;
+    }
+  }
+}
+
+@import 'components/modules/collapse-bar';
+@import 'components/modules/filterbox';
+@import 'components/modules/columnbox--quatre';

@@ -4,9 +4,4 @@
   .table-responsive{
     @include tablesaw-stack( $screen-sm );
   }
-
-  .row{
-    padding-top : 50px;
-    padding-bottom : 30px;
-  }
 }

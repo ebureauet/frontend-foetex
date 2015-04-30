@@ -7,20 +7,30 @@ $foetex-ltgrey : #e1e1e1;
 $foetex-dkwhite : #eae8e7;
 $foetex-white : #ffffff;
 
+//color categories map
+$foetex-cat-colors: (
+    baby: #89c6bd,
+    foods: #0f4225
+);
+
 
 //default font sizes
 $foetex-h1 : 46px;
 $foetex-h2 : 24px;
 $foetex-h3 : 26px;
+$foetex-h4 : 22px;
 $foetex-p : 18px;
 $foetex-p-article : 22px;
+$foetex-p-copy : 16px;
 $foetex-icon-md : 32px;
 $foetex-input-md : 22px;
-
 
 //border-radius
 $foetex-form-radius : 8px;
 $foetex-content-body : 20px;
+
+//background textures
+$foetex-bg-img-white : "../images/bg-foetex-white.jpg";
 
 .color--normal{
   background : transparent;
