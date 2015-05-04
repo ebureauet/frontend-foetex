@@ -1,4 +1,4 @@
-.collapse-bar{
+.collapsebar{
   border-top : 1px solid $foetex-grey;
   border-bottom : 0px solid $foetex-grey;
   .collapse{
@@ -18,11 +18,13 @@
       }
     }
     &.collapsed{
-      .up{
-        display : none;
-      }
-      .down{
-        display : block;
+      span{
+        .up{
+          display : none;
+        }
+        .down{
+          display : block;
+        }
       }
     }
   }

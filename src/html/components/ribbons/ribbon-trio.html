@@ -1,0 +1,52 @@
+<!-- ribbon-cover class is a ribbon that should contain a background image -->
+<!-- ribbon-cover-filter is a ribbon variant that is a container for filtered items -->
+<div class="ribbon container-fluid">
+
+  <div class="headtitle row">
+    @@include('../modules/headtitle__bar.html',{
+      "titleA" : "Vi vil gøre",
+      "titleB" : "Den Gode Kvalitet Tilgænlig for alle"
+    })
+  </div>
+
+  <div class="columnbox columnbox--trio row">
+
+    @@include('../modules/columnbox--trio__item.html',{
+      "category" : "butchery",
+      "imgsrc"  : "images/img-baby-1.jpg",
+      "imgalt"  : "baby1",
+      "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+      "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+      "foottext" : "Se alle tilbud",
+      "footlink" : "#",
+      "stamptype" : "savings",
+      "stampmeta" : "<span>Spar</span><span>45,-</span>"
+    })
+
+    @@include('../modules/columnbox--trio__item.html',{
+      "category" : "bakery",
+      "imgsrc" : "images/img-baby-2.jpg",
+      "imgalt" : "baby1",
+      "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+      "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+      "foottext" : "Se alle tilbud",
+      "footlink" : "#",
+      "stamptype" : "weeks",
+      "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>"
+    })
+
+    @@include('../modules/columnbox--trio__item.html',{
+      "category" : "greengoods",
+      "imgsrc" : "images/img-land-1.jpg",
+      "imgalt" : "baby1",
+      "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+      "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+      "foottext" : "Læs denne artikel",
+      "footlink" : "#",
+      "stamptype" : "months",
+      "stampmeta" : "<span>0-6</span><span>måneder</span>"
+    })
+
+  </div>
+
+</div>

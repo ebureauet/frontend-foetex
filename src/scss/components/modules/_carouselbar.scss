@@ -1,0 +1,91 @@
+.carouselbar{
+  &.row{
+    padding-left : 0px;
+    padding-right : 0px;
+  }
+  &--duo{
+    position : relative;
+    &__carousel{
+      max-width : 1060px;
+      margin : 0 auto;
+      @include breakpoint($respond){
+        max-width : 80%;
+      }
+      .owl-item{
+        z-index:1;
+      }
+      .item{
+        .contents{
+          border-radius : 20px;
+          overflow : hidden;
+          text-align : center;
+          img{
+            width : 520px;
+            max-height : 280px;
+            height : auto;
+            @include breakpoint( max-width 768 ){
+              width : 100%;
+              max-height : 0;
+              height : auto;
+            }
+            margin-left: 50%;
+            @include translateX(-50%);
+          }
+        }
+      }
+    }
+    &__nav{
+      >div{
+        position : absolute;
+        height : 100%;
+        height: 50px;
+        line-height: 50px;
+        top: 50%;
+        margin-top: -25px;
+        span{
+          vertical-align : middle;
+          font-size : 50px;
+        }
+      }
+      .owl-prev{
+        left : 0px;
+        span{
+          @extend .icon-foetex-arrowleft;
+        }
+      }
+      .owl-next{
+        right : 0px;
+        span{
+          @extend .icon-foetex-arrowright;
+        }
+      }
+    }
+    &__dots{
+      margin-top : 20px;
+      width : 100%;
+      text-align : center;
+      .owl-dot{
+        display : inline-block;
+        width : 20px;
+        height : 20px;
+        border-radius : 10px;
+        padding: 4px;
+        background-color : $foetex-white;
+        cursor : pointer;
+        margin : 0px 5px;
+        span{
+          display : none;
+        }
+        &.active{
+          span{
+            display : block;
+            width : 12px;
+            height : 12px;
+            border-radius : 10px;
+            background-color : $foetex-blue;
+          }
+        }
+      }
+    }
+  }
+}

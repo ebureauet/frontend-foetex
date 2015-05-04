@@ -1,4 +1,4 @@
-<div class="ribbon ribbon-kitchensink container-fluid">
+<div class="ribbon ribbon--kitchensink container-fluid">
 
   <div class="row article">
     <h1>Lorem ipsum dolor sit amet consectetuer adipiscing
@@ -116,33 +116,28 @@
 
   <div class="row">
     <h2>Accordions</h2>
-    <div class="collapse-bar">
-      <h2 class="collapse-bar__button clearfix" data-toggle="collapse" data-target="#collapse-item1" aria-expanded="false" aria-controls="collapse-item1">
-        Collapse Bar 1
-        <span class="up icon-foetex-dropup pull-right"></span><span class="down icon-foetex-dropdown pull-right"></span>
-      </h2>
-      <div class="collapse" id="collapse-item1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, accusantium, laudantium. Delectus itaque mollitia, unde, enim odio accusantium dolorum minus dolorem natus sunt iure corrupti dolore nemo vero. Aspernatur, magnam!
-      </div>
-    </div>
-    <div class="collapse-bar">
-      <h2 class="collapse-bar__button clearfix" data-toggle="collapse" data-target="#collapse-item2" aria-expanded="false" aria-controls="collapse-item2">
-        Collapse Bar 2
-        <span class="up icon-foetex-dropup pull-right"></span><span class="down icon-foetex-dropdown pull-right"></span>
-      </h2>
-      <div class="collapse" id="collapse-item2">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis praesentium laborum architecto, recusandae nostrum perspiciatis quam quas nesciunt alias accusantium quod earum nemo cupiditate sunt corrupti voluptatem odit cumque sapiente facilis eum tempore, nisi ratione voluptatum quia! Itaque necessitatibus temporibus quam, ea, nihil voluptas facere. Sint unde culpa fugit quos eveniet possimus quisquam reprehenderit commodi et accusamus, saepe, deleniti nostrum molestias assumenda dolores! Illum alias reiciendis aliquid facilis sit sapiente quibusdam nobis quae unde porro sunt accusamus rem commodi repellendus asperiores illo sint expedita, perspiciatis iusto doloribus fugiat debitis eius ab at! Accusantium sint maxime nemo temporibus distinctio quos quam illum placeat possimus qui eius, magnam amet, suscipit modi incidunt molestiae cumque adipisci, dolores ea? Enim officiis nam inventore perferendis et consectetur! Voluptatibus quisquam sed officiis commodi fuga, delectus, minima harum exercitationem quos consectetur tempora maxime ipsum est veniam a!
-      </div>
-    </div>
-    <div class="collapse-bar">
-      <h2 class="collapse-bar__button clearfix" data-toggle="collapse" data-target="#collapse-item3" aria-expanded="false" aria-controls="collapse-item3">
-        Collapse Bar 3
-        <span class="up icon-foetex-dropup pull-right"></span><span class="down icon-foetex-dropdown pull-right"></span>
-      </h2>
-      <div class="collapse" id="collapse-item3">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consectetur facere amet perferendis sunt. Officiis illo distinctio provident expedita culpa delectus quaerat, eligendi minima rem dignissimos, ex modi accusantium aliquid. Dignissimos fugiat accusantium quos esse odio, eius architecto id. Beatae numquam sed quo! Voluptatibus, ratione inventore et dolorem dolores? Enim quo architecto unde, adipisci quis sapiente omnis, odio dignissimos ullam pariatur et ipsa asperiores voluptatibus facere aut, nostrum sequi officiis autem soluta esse. Cumque maxime magni ullam quod voluptate praesentium labore, dolorem rem voluptatem eaque minima incidunt accusamus ducimus vitae eum facilis, doloribus repellendus deserunt sed temporibus quia neque. Voluptatem voluptas iure, consequuntur repellat at ratione omnis, repudiandae laboriosam quo nisi, eos temporibus rem, aspernatur hic consequatur itaque? Quae, odio.
-      </div>
-    </div>
+
+    @@include('../modules/collapsebar.html',{
+      "itemid" : "collapse-item1",
+      "itemtitle" : "Collapse Bar 1",
+      "itemcontent" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, accusantium, laudantium. Delectus itaque mollitia, unde, enim odio accusantium dolorum minus dolorem natus sunt iure corrupti dolore nemo vero. Aspernatur, magnam!",
+      "addclass" : ""
+    })
+
+    @@include('../modules/collapsebar.html',{
+      "itemid" : "collapse-item2",
+      "itemtitle" : "Collapse Bar 2",
+      "itemcontent" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis praesentium laborum architecto, recusandae nostrum perspiciatis quam quas nesciunt alias accusantium quod earum nemo cupiditate sunt corrupti voluptatem odit cumque sapiente facilis eum tempore, nisi ratione voluptatum quia! Itaque necessitatibus temporibus quam, ea, nihil voluptas facere. Sint unde culpa fugit quos eveniet possimus quisquam reprehenderit commodi et accusamus, saepe, deleniti nostrum molestias assumenda dolores! Illum alias reiciendis aliquid facilis sit sapiente quibusdam nobis quae unde porro sunt accusamus rem commodi repellendus asperiores illo sint expedita, perspiciatis iusto doloribus fugiat debitis eius ab at! Accusantium sint maxime nemo temporibus distinctio quos quam illum placeat possimus qui eius, magnam amet, suscipit modi incidunt molestiae cumque adipisci, dolores ea? Enim officiis nam inventore perferendis et consectetur! Voluptatibus quisquam sed officiis commodi fuga, delectus, minima harum exercitationem quos consectetur tempora maxime ipsum est veniam a!",
+      "addclass" : ""
+    })
+
+    @@include('../modules/collapsebar.html',{
+      "itemid" : "collapse-item3",
+      "itemtitle" : "Collapse Bar 3",
+      "itemcontent" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consectetur facere amet perferendis sunt. Officiis illo distinctio provident expedita culpa delectus quaerat, eligendi minima rem dignissimos, ex modi accusantium aliquid. Dignissimos fugiat accusantium quos esse odio, eius architecto id. Beatae numquam sed quo! Voluptatibus, ratione inventore et dolorem dolores? Enim quo architecto unde, adipisci quis sapiente omnis, odio dignissimos ullam pariatur et ipsa asperiores voluptatibus facere aut, nostrum sequi officiis autem soluta esse. Cumque maxime magni ullam quod voluptate praesentium labore, dolorem rem voluptatem eaque minima incidunt accusamus ducimus vitae eum facilis, doloribus repellendus deserunt sed temporibus quia neque. Voluptatem voluptas iure, consequuntur repellat at ratione omnis, repudiandae laboriosam quo nisi, eos temporibus rem, aspernatur hic consequatur itaque? Quae, odio.",
+      "addclass" : ""
+    })
+
   </div>
 
   <div class="row">

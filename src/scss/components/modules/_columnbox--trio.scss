@@ -1,12 +1,16 @@
 
-//======= module: columnbox--quatre =======
+//======= module: columnbox--trio =======
 
-.columnbox--quatre{
-  $paddingsW:20px;
+.columnbox--trio{
+  $paddingsW:15px;
   $borderR:20px;
+
+  &.row{
+    padding-top : 10px;
+  }
   &__item{
-    @extend .col-sm-6;
-    @extend .col-md-3;
+    @extend .col-sm-4;
+    @extend .col-md-4;
     .media{
       width : 100%;
       height : 300px;
@@ -87,16 +91,35 @@
       height : 180px;
       padding : 10px $paddingsW;
       background-color : $foetex-white;
+      position : relative;
+
+      border-bottom-left-radius : 10px;
+      border-bottom-right-radius : 10px;
+
       .heading{
-        @include font('chevin-bold');
-        font-size : $foetex-h4;
+        @include font('chevin-medium');
+        font-size : $foetex-h5;
+        text-align : center;
       }
       .copy{
+        display : none;
         @include font('chevin-medium');
         font-size : $foetex-p-copy;
       }
+      .button-link{
+        position : absolute;
+        bottom : 0px;
+        left : 0px;
+        width : 100%;
+        padding : 15px 15px;
+        .btn{
+          width : 100%;
+          text-transform : uppercase;
+        }
+      }
     }
     .foot{
+      display : none;
       border-bottom-left-radius : 10px;
       border-bottom-right-radius : 10px;
       font-size : $foetex-p;
@@ -108,61 +131,27 @@
         display : block;
       }
     }
-    &--links{
-      .quicklinks{
-        display : block;
-        width : 100%;
-        height : 100%;
-        color : $foetex-white;
-        position : relative;
-        border-bottom-left-radius : 10px;
-        border-bottom-right-radius : 10px;
-        &__list{
-          display : block;
-          width : 100%;
-          position : absolute;
-          bottom : 45px;
-          left : 0px;
-          background-color : rgba(0, 0, 0, 0.5);
-          padding: 10px 20px;
-          h3{
-            font-style : italic;
-          }
-          ul{
-            @extend .ul-nostyle;
-            li{
-              a{
-                color : inherit;
-                display : block;
-                position : relative;
-                span{
-                  position : absolute;
-                  right : 0;
-                  @extend .icon-foetex-arrowright;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
     @each $foetex-category-map, $map in $foetex-category-maps {
       &.cat-#{$foetex-category-map} {
         .media{
           .stamp{
-            background-color: map-get( $map, 'color');
+            background-color: map-get($map, 'color');
             &.stamp--time{
               .icon-holder{
-                background-color: darken( map-get( $map, 'color'), 5%);
+                background-color: darken( map-get($map, 'color'), 5%);
               }
             }
           }
         }
-        .foot{
-          background-color: map-get( $map, 'color');
+        .details{
+          .button-link{
+            .btn{
+              @include button-variant($foetex-white, map-get($map, 'color'), map-get($map, 'color'));
+            }
+          }
         }
-        .quicklinks{
-          background-color: map-get( $map, 'color');
+        .foot{
+          background: map-get($map, 'color');
         }
       }
     }

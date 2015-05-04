@@ -8,17 +8,22 @@ $foetex-dkwhite : #eae8e7;
 $foetex-white : #ffffff;
 
 //color categories map
-$foetex-cat-colors: (
-    baby: #89c6bd,
-    foods: #0f4225
+$foetex-category-maps: (
+  baby : (color : #89c6bd, icon : icon-char(foetex-ducky)),
+  recipe : (color : #0f4225, icon : icon-char(foetex-cookingpot)),
+  butchery : (color : #012d5a, icon : icon-char(foetex-cookingpot)),
+  bakery : (color : #4d3531, icon: icon-char(foetex-cookingpot)),
+  greengoods : (color : #04442c, icon : icon-char(foetex-cookingpot)),
+  wine : (color : #602134, icon : icon-char(foetex-beverages))
 );
-
 
 //default font sizes
 $foetex-h1 : 46px;
 $foetex-h2 : 24px;
 $foetex-h3 : 26px;
 $foetex-h4 : 22px;
+$foetex-h5 : 20px;
+$foetex-headtitle : 38px;
 $foetex-p : 18px;
 $foetex-p-article : 22px;
 $foetex-p-copy : 16px;

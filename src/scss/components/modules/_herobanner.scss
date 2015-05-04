@@ -1,0 +1,84 @@
+$iconsize : 70px;
+
+.herobanner{
+  text-transform : uppercase;
+  color : $foetex-white;
+  &.row{
+    padding-top : 125px;
+  }
+  &__content{
+    text-align : center;
+    .seal{
+      color : $foetex-white;
+      display : inline-block;
+      padding-left : 20px;
+      padding-right : 20px;
+      text-align : center;
+      padding-top : 10px;
+      padding-bottom : 10px;
+      border-radius : 20px;
+      margin : 20px auto;
+      .twolines{
+        display : inline-block;
+        vertical-align : middle;
+        margin-right: -10px;
+        span{
+          display : block;
+          text-align : right;
+          width : 100%;
+        }
+      }
+      .logo{
+        display : inline-block;
+        line-height : $iconsize;
+        height : $iconsize;
+        vertical-align : middle;
+      }
+      .line3{
+        @include font('chevin-bold');
+        display : block;
+        font-size : 38px;
+        line-height : 1;
+        margin-top : -5px;
+        margin-bottom : 5px;
+      }
+    }
+    .bigwords{
+      @include font('chevin-bold');
+      font-size : 60px;
+      text-align : inherit;
+      line-height : 1;
+      margin : 0;
+    }
+    .words{
+      @include font('chevin-bold');
+      font-size :38px;
+      text-transform : none;
+      text-align : inherit;
+      margin : 0;
+    }
+  }
+}
+
+@each $foetex-category-map, $map in $foetex-category-maps {
+  &.category-#{$foetex-category-map} {
+    .herobanner{
+      &__content{
+        .seal{
+          background-color : map-get($map, 'color');
+          .twolines{
+            @include font('chevin-demibold');
+            font-size : 20px;
+          }
+          .logo{
+            &::before{
+              font-family : "Icons";
+              content : map-get($map, 'icon');
+              font-size : $iconsize;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,10 +35,14 @@
   },
   "browser": {
     "jquery": "./bower_components/jquery/dist/jquery.js",
+    "slick": "./bower_components/slick.js/slick/slick.min.js",
     "owlcarousel": "./bower_components/owl.carousel/dist/owl.carousel.js"
   },
   "browserify-shim": {
     "jquery": {
+      "exports": null
+    },
+    "slick": {
       "exports": null
     },
     "owlcarousel": {
