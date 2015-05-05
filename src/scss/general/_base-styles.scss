@@ -18,6 +18,9 @@
   font-size : $foetex-p;
 }
 
+input:focus {
+    outline: none!important;
+}
 
 body{
   @extend .foetex-p;
@@ -205,31 +208,26 @@ a:hover{
     }
   }
 
-/*
-  .ribbon-cover--filterbox{
+  .ribbon--white{
+    background-color : $foetex-white;
     .row{
-      background-image : url($foetex-bg-img-white);
-      background-repeat : repeat;
-    }
-    .filterbox{
-      padding-bottom : 0px;
-    }
-    .button-see-all{
-      padding-top : 0px;
+      background : transparent;
+      padding-left : 40px;
+      padding-right : 40px;
     }
   }
-*/
 }
 
 
 
-  $bgcolor : $foetex-blue;
+$bgcolor : $foetex-blue;
 
-  @import 'components/modules/collapsebar';
-  @import 'components/modules/filterbox';
-  @import 'components/modules/buttonseeall';
-  @import 'components/modules/herobanner';
-  @import 'components/modules/headtitle';
-  @import 'components/modules/carouselbar';
-  @import 'components/modules/columnbox--quatre';
-  @import 'components/modules/columnbox--trio';
+@import 'components/modules/collapsebar';
+@import 'components/modules/filterbox';
+@import 'components/modules/buttonseeall';
+@import 'components/modules/herobanner';
+@import 'components/modules/newsletterform';
+@import 'components/modules/headtitle';
+@import 'components/modules/carouselbar';
+@import 'components/modules/columnbox--quatre';
+@import 'components/modules/columnbox--trio';

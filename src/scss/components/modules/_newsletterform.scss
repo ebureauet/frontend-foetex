@@ -1,0 +1,47 @@
+.newsletter{
+  &__graphic{
+    @extend .col-sm-6;
+
+  }
+  &__form{
+    @extend .col-sm-6;
+    .title{
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+      h3{
+        @include font('chevin-bold');
+        font-size : 35px;
+        line-height : 1;
+        span{
+          font-size : 66px;
+        }
+      }
+      p{
+        @include font('chevin-bold');
+        color : $foetex-grey;
+      }
+    }
+    form{
+      margin : 0 auto;
+      width : 72%;
+    }
+  }
+}
+
+@each $foetex-category-map, $map in $foetex-category-maps {
+  .category-#{$foetex-category-map} {
+    .newsletter{
+      &__graphic{
+
+      }
+      &__form{
+        .title{
+          h3{
+            color : map-get($map, 'color');
+          }
+        }
+      }
+    }
+  }
+}

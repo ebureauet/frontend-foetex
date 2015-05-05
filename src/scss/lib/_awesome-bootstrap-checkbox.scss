@@ -192,3 +192,7 @@ $checkbox-icon: icon-char(foetex-checkbox-checked);
 @include radio-variant('.radio-info', $brand-info);
 @include radio-variant('.radio-warning', $brand-warning);
 @include radio-variant('.radio-success', $brand-success);
+
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: none;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1000"
+   height="1000"
+   id="svg5496">
+  <metadata
+     id="metadata5594">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5498">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4184">
+      <stop
+         id="stop4186"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+    <font
+       horiz-adv-x="1024"
+       id="font3933">
+      <font-face
+         units-per-em="1024"
+         id="font-face3935"
+         font-family="Your Icons" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph3937" />
+    </font>
+  </defs>
+  <path
+     id="rect5636"
+     d="M 80.964844 47.841797 C 64.248144 47.841797 50.791016 61.298925 50.791016 78.015625 L 50.791016 928.7207 C 50.791016 945.4374 64.248144 958.89453 80.964844 958.89453 L 927.50977 958.89453 C 944.22647 958.89453 957.68359 945.4374 957.68359 928.7207 L 957.68359 78.015625 C 957.68359 61.298925 944.22647 47.841797 927.50977 47.841797 L 80.964844 47.841797 z "
+     style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.13609171;stroke-miterlimit:4;stroke-dasharray:none" />
+  <g
+     id="layer1" />
+</svg>
