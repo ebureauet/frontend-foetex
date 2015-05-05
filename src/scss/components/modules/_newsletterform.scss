@@ -1,10 +1,18 @@
 .newsletter{
   &__graphic{
-    @extend .col-sm-6;
-
+    @extend .col-md-6;
+    figure{
+      width : 100%;
+      max-width : 562px;
+      margin : 50px auto;
+      img{
+        width : 100%;
+        height : auto;
+      }
+    }
   }
   &__form{
-    @extend .col-sm-6;
+    @extend .col-md-6;
     .title{
       width: 75%;
       margin: 0 auto;
@@ -25,6 +33,16 @@
     form{
       margin : 0 auto;
       width : 72%;
+      .checkboxes{
+        label{
+          @include font('chevin-demibold');
+          font-size : 22px;
+          color : $foetex-blue;
+        }
+      }
+      .btn{
+        width : 100%;
+      }
     }
   }
 }
@@ -39,6 +57,20 @@
         .title{
           h3{
             color : map-get($map, 'color');
+          }
+        }
+        form{
+          .checkboxes{
+            label{
+              color : map-get($map, 'color');
+            }
+          }
+          .form-control{
+            margin-bottom : 20px;
+          }
+          .btn{
+            @include button-variant($foetex-white, map-get( $map, 'color'), map-get( $map, 'color'));
+            color : $foetex-white;
           }
         }
       }

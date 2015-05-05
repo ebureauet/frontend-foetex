@@ -4,14 +4,15 @@
 
 $font-family-icon: 'Icons' !default;
 $checkbox-icon: icon-char(foetex-checkbox-checked);
+$checkbox-square: icon-char(foetex-checkbox-square);
+$checkbox-circle: icon-char(foetex-checkbox-circle);
 
 //@debug $checkbox-icon;
 
 @mixin checkbox-variant($parent, $color) {
   #{$parent} input[type="checkbox"]:checked + label{
     &::before {
-      background-color: $color;
-      border-color: $color;
+      color : $color;
     }
     &::after{
       color: #fff;
@@ -21,40 +22,30 @@ $checkbox-icon: icon-char(foetex-checkbox-checked);
 
 
 .checkbox{
-  padding-left: 20px;
+  //padding-left : 20px;
 
   label{
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    padding-left: 5px;
+    display : inline-block;
+    vertical-align : bottom;
+    padding-left : 0px;
 
     &::before{
-      content: "";
-      display: inline-block;
-      position: absolute;
-      width: 17px;
-      height: 17px;
-      left: 0;
-      margin-left: -20px;
-      border: 1px solid $input-border;
-      border-radius: 3px;
-      background-color: #fff;
-      @include transition(border 0.15s ease-in-out, color 0.15s ease-in-out);
+      font-family : $font-family-icon;
+      content : $checkbox-square;
+      display : inline-block;
+      vertical-align : middle;
+      color : $foetex-ltgrey;
+      font-size : inherit;
     }
 
     &::after{
       display: inline-block;
       position: absolute;
-      width: 16px;
-      height: 16px;
       left: 0;
-      top: 0;
-      margin-left: -20px;
-      padding-left: 3px;
-      padding-top: 1px;
-      font-size: 11px;
-      color: $input-color;
+      top: 0.2em;
+      vertical-align : middle;
+      font-size: inherit;
+      color: inherit;
     }
   }
 
@@ -79,15 +70,15 @@ $checkbox-icon: icon-char(foetex-checkbox-checked);
         cursor: not-allowed;
       }
     }
-
   }
 
   &.checkbox-circle label::before{
-    border-radius: 50%;
+    content : $checkbox-circle;
   }
 
   &.checkbox-inline{
     margin-top: 0;
+    padding-left: 0px;
   }
 }
 
