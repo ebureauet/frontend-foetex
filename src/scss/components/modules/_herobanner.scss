@@ -61,7 +61,7 @@ $iconsize : 70px;
 }
 
 @each $foetex-category-map, $map in $foetex-category-maps {
-  &.category-#{$foetex-category-map} {
+  .category-#{$foetex-category-map} {
     .herobanner{
       &__content{
         .seal{

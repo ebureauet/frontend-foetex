@@ -9,12 +9,12 @@ $foetex-white : #ffffff;
 
 //color categories map
 $foetex-category-maps: (
-  baby : (color : #89c6bd, icon : icon-char(foetex-ducky)),
-  recipe : (color : #0f4225, icon : icon-char(foetex-cookingpot)),
-  butchery : (color : #012d5a, icon : icon-char(foetex-cookingpot)),
-  bakery : (color : #4d3531, icon: icon-char(foetex-cookingpot)),
-  greengoods : (color : #04442c, icon : icon-char(foetex-cookingpot)),
-  wine : (color : #602134, icon : icon-char(foetex-beverages))
+  baby : (color : #89c6bd, icon : icon-char(foetex-ducky), texture : 'bg-texture-wood-baby.jpg'),
+  recipe : (color : #0f4225, icon : icon-char(foetex-cookingpot), texture : 'bg-texture-wood.jpg'),
+  butchery : (color : #012d5a, icon : icon-char(foetex-cookingpot), texture : 'bg-texture-wood-baby.jpg'),
+  bakery : (color : #4d3531, icon: icon-char(foetex-cookingpot), texture : 'bg-texture-wood.jpg'),
+  greengoods : (color : #04442c, icon : icon-char(foetex-cookingpot), texture : 'bg-texture-wood.jpg'),
+  wine : (color : #602134, icon : icon-char(foetex-beverages), texture : 'bg-texture-wood.jpg')
 );
 
 //default font sizes

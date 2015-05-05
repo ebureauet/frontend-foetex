@@ -222,7 +222,7 @@ a:hover{
 }
 
 
-.content{
+
   $bgcolor : $foetex-blue;
 
   @import 'components/modules/collapsebar';
@@ -233,4 +233,3 @@ a:hover{
   @import 'components/modules/carouselbar';
   @import 'components/modules/columnbox--quatre';
   @import 'components/modules/columnbox--trio';
-}

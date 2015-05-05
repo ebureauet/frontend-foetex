@@ -9,14 +9,12 @@
 }
 
 @each $foetex-category-map, $map in $foetex-category-maps {
-  &.category-#{$foetex-category-map} {
-    .ribbon{
-      .buttonseeall{
-        text-align : center;
-        button{
-          @include button-variant($foetex-white, map-get( $map, 'color'), map-get( $map, 'color'));
-          box-shadow : 0px 3px 0px 0px desaturate(darken( map-get( $map, 'color'), 20%),15%);
-        }
+  .category-#{$foetex-category-map} {
+    .buttonseeall{
+      text-align : center;
+      button{
+        @include button-variant($foetex-white, map-get( $map, 'color'), map-get( $map, 'color'));
+        box-shadow : 0px 3px 0px 0px desaturate(darken( map-get( $map, 'color'), 20%),15%);
       }
     }
   }

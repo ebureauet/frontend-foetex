@@ -1,6 +1,33 @@
 
 //======= module: columnbox--trio =======
 
+@each $foetex-category-map, $map in $foetex-category-maps {
+  &.cat-#{$foetex-category-map} {
+    .columnbox--trio{
+      .media{
+        .stamp{
+          background-color: map-get($map, 'color');
+          &.stamp--time{
+            .icon-holder{
+              background-color: darken( map-get($map, 'color'), 5%);
+            }
+          }
+        }
+      }
+      .details{
+        .button-link{
+          .btn{
+            @include button-variant($foetex-white, map-get($map, 'color'), map-get($map, 'color'));
+          }
+        }
+      }
+      .foot{
+        background: map-get($map, 'color');
+      }
+    }
+  }
+}
+
 .columnbox--trio{
   $paddingsW:15px;
   $borderR:20px;

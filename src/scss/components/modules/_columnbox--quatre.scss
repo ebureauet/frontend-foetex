@@ -1,5 +1,28 @@
 
 //======= module: columnbox--quatre =======
+@each $foetex-category-map, $map in $foetex-category-maps {
+  .category-#{$foetex-category-map}{
+    .columnbox--quatre__item{
+      .media{
+        .stamp{
+          background-color: map-get( $map, 'color');
+          &.stamp--time{
+            .icon-holder{
+              background-color: darken( map-get( $map, 'color'), 5%);
+            }
+          }
+        }
+      }
+      .foot{
+        background-color: map-get( $map, 'color');
+      }
+      .quicklinks{
+        background-color: map-get( $map, 'color');
+        background-image: url('../images/'+map-get( $map, 'texture'));
+      }
+    }
+  }
+}
 
 .columnbox--quatre{
   $paddingsW:20px;
@@ -163,6 +186,7 @@
         }
         .quicklinks{
           background-color: map-get( $map, 'color');
+          background-image: url('../images/'+map-get( $map, 'texture'));
         }
       }
     }

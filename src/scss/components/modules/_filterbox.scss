@@ -41,42 +41,40 @@
 }
 
 @each $foetex-category-map, $map in $foetex-category-maps {
-  &.category-#{$foetex-category-map} {
-    .ribbon{
-      .filterbox{
-        &--button{
-          &__button{
-            .btn{
-              @include button-variant($foetex-white, desaturate(darken(map-get($map, 'color'),20%),15%), desaturate(darken(map-get($map, 'color'),20%),15%));
-              &.selected{
-                @include button-variant($foetex-white, map-get($map, 'color'), map-get($map, 'color'));
-              }
+  .category-#{$foetex-category-map} {
+    .filterbox{
+      &--button{
+        &__button{
+          .btn{
+            @include button-variant($foetex-white, desaturate(darken(map-get($map, 'color'),20%),15%), desaturate(darken(map-get($map, 'color'),20%),15%));
+            &.selected{
+              @include button-variant($foetex-white, map-get($map, 'color'), map-get($map, 'color'));
             }
-          }
-          &::after{
-            border-bottom : 1px solid darken(map-get($map, 'color'), 20%);
-            width : 100%;
-            padding : 0px ($grid-gutter-width / 2);
           }
         }
-        &--inline{
-          .prefix-item{
+        &::after{
+          border-bottom : 1px solid darken(map-get($map, 'color'), 20%);
+          width : 100%;
+          padding : 0px ($grid-gutter-width / 2);
+        }
+      }
+      &--inline{
+        .prefix-item{
+          color : map-get($map, 'color');
+        }
+        &__button{
+          &.selected{
             color : map-get($map, 'color');
           }
-          &__button{
-            &.selected{
-              color : map-get($map, 'color');
-            }
-            span{
+          span{
 
-            }
           }
-          &::before{
-            border-bottom : 1px solid darken(map-get($map, 'color'), 20%);
-            width : 100%;
-            padding : 0px ($grid-gutter-width / 2);
-            margin-bottom : 20px;
-          }
+        }
+        &::before{
+          border-bottom : 1px solid darken(map-get($map, 'color'), 20%);
+          width : 100%;
+          padding : 0px ($grid-gutter-width / 2);
+          margin-bottom : 20px;
         }
       }
     }

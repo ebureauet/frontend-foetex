@@ -4,20 +4,16 @@
 
   @@include('../general/page-header.html')
 
-  <div class="content category-baby">
+  <div class="content">
 
-    @@include('../components/ribbons/ribbon-transparent.html')
-    @@include('../components/ribbons/ribbon-cover-filter.html')
-    @@include('../components/ribbons/ribbon-slideshow.html')
-    @@include('../components/ribbons/ribbon-kitchensink.html')
-    @@include('../components/ribbons/ribbon-categorial-brochure.html',{
-      "bannerimg" : "images/img-land-1.jpg"
-    })
-    @@include('../components/ribbons/ribbon-articles.html')
-    @@include('../components/ribbons/ribbon-banner-baby.html',{
-      "bannerimg" : "images/img-land-1.jpg"
-    })
-    @@include('../components/ribbons/ribbon-trio.html')
+    @@include('../components/ribbons/ribbon-transparent.html', {"ribbon-category" : "category-baby"})
+    @@include('../components/ribbons/ribbon-cover-filter.html', {"ribbon-category" : "category-baby"})
+    @@include('../components/ribbons/ribbon-slideshow.html', {"ribbon-category":"category-baby"})
+    @@include('../components/ribbons/ribbon-kitchensink.html', {"ribbon-category":"category-baby"})
+    @@include('../components/ribbons/ribbon-categorial-brochure.html',{"ribbon-category":"category-baby", "bannerimg" : "images/herobanner-baby-1.jpg"})
+    @@include('../components/ribbons/ribbon-articles.html', {"ribbon-category":"category-baby"})
+    @@include('../components/ribbons/ribbon-banner-baby.html', {"ribbon-category":"category-baby", "bannerimg" : "images/herobanner-baby-1.jpg"})
+    @@include('../components/ribbons/ribbon-trio.html', {"ribbon-category":"category-baby"})
 
   </div>
 
