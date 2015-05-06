@@ -52,11 +52,6 @@
             }
           }
         }
-        &::after{
-          border-bottom : 1px solid darken(map-get($map, 'color'), 20%);
-          width : 100%;
-          padding : 0px ($grid-gutter-width / 2);
-        }
       }
       &--inline{
         .prefix-item{

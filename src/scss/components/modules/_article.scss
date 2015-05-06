@@ -1,0 +1,71 @@
+.article{
+  &__top{
+    >.social-links ul{
+      $linkhyt : 50px;
+      @extend .ul-nostyle;
+      float : right;
+      font-size : $linkhyt;
+      li{
+        float : left;
+        height : $linkhyt;
+        line-height : $linkhyt;
+        color : $foetex-blue;
+      }
+    }
+  }
+  &__block{
+    &__main{
+      @extend .col-md-12;
+      article.content{
+        background : $foetex-white;
+        min-height : 200px;
+        padding : $foetex-paddings-article;
+        border-top-left-radius : $foetex-content-body;
+        border-top-right-radius : $foetex-content-body;
+        font-size : $foetex-p-article;
+        img{
+          &.pull-right{
+            margin-left : 30px;
+          }
+          &.pull-left{
+            margin-right : 30px;
+          }
+        }
+        blockquote{
+          margin-left:-$foetex-paddings-article;
+          margin-right:-$foetex-paddings-article;
+          padding:inherit;
+          background-color : $foetex-ltgrey;
+        }
+      }
+    }
+    &__sidebar{
+      display : none;
+    }
+    &.withsidebar{
+      .article__block__main{
+        @extend .col-md-9;
+        article.content{
+          max-width: 830px;
+        }
+      }
+      .article__block__sidebar{
+        @extend .col-md-3;
+        display : block;
+        .widget{
+          margin-bottom : 50px;
+          padding-left: 0px;
+          padding-right: 0px;
+          h2{
+            @include font('chevin-medium');
+            font-size : $foetex-icon-md;
+            border-bottom : 1px solid #ccc;
+            margin : 0px 0px 30px 0px;
+            padding-top : 0px;
+            padding-bottom : 15px;
+          }
+        }
+      }
+    }
+  }
+}

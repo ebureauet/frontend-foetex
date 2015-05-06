@@ -1,0 +1,10 @@
+//breakpoints (for use only with breakpoint mixin)
+$handhelds : (max-width ($screen-sm - 1)) ;
+$handhelds-tablets : (max-width ($screen-md - 1));
+$tablets : (min-width $screen-sm) (max-width ($screen-md - 1));
+$desktop : (min-width $screen-md);
+$largescreens : (min-width $screen-lg);
+$respond : (max-width $foetex-max-width);
+
+//use these variables for bootstrap breakpoint values:
+// $screen-sm , $screen-md, $screen-lg

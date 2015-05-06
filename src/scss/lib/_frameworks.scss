@@ -1,7 +1,7 @@
 /*===== BOOTSTRAP ======*/
 
 // Bootstrap variables
-@import "bootstrap-variables";
+@import "custom/bootstrap-variables";
 
 // Mixins
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
@@ -13,7 +13,7 @@
 
 // Core CSS
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "custom/bootstrap-type";
 // @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
@@ -22,7 +22,7 @@
 
 // Components
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
-@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+@import "custom/bootstrap-dropdowns";
 // @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
@@ -53,9 +53,14 @@
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
+// Checkboxes
+@import "custom/awesome-bootstrap-checkbox";
+
+
 
 /*===== BREAKPOINT ======*/
 @import "./bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "custom/breakpoints";
 
 
 

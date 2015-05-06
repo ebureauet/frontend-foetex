@@ -5,7 +5,8 @@ $foetex-grey : #7e7e7e;
 $foetex-dkgrey : #444444;
 $foetex-ltgrey : #e1e1e1;
 $foetex-dkwhite : #eae8e7;
-$foetex-white : #ffffff;
+$foetex-ltwhite : #ffffff;
+$foetex-white : #f3f3f3;
 
 //color categories map
 $foetex-category-maps: (
@@ -34,6 +35,10 @@ $foetex-input-md : 22px;
 $foetex-form-radius : 8px;
 $foetex-content-body : 20px;
 
+//paddings
+$foetex-paddings-article : 50px;
+
+
 //background textures
 $foetex-bg-img-white : "../images/bg-foetex-white.jpg";
 
@@ -49,14 +54,3 @@ $foetex-max-width : 1260px;
 //heights
 $foetex-header-top-height : 50px;
 $foetex-header-main-height : 60px;
-
-//breakpoints (for use only with breakpoint mixin)
-$handhelds : (max-width ($screen-sm - 1)) ;
-$handhelds-tablets : (max-width ($screen-md - 1));
-$tablets : (min-width $screen-sm) (max-width ($screen-md - 1));
-$desktop : (min-width $screen-md);
-$largescreens : (min-width $screen-lg);
-$respond : (max-width $foetex-max-width);
-
-//use these variables for bootstrap breakpoint values:
-// $screen-sm , $screen-md, $screen-lg

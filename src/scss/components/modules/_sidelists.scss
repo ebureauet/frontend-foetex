@@ -1,0 +1,20 @@
+
+//======= module: sidelists =======
+
+.sidelists{
+  &--articles{
+    font-size : 20px;
+    @extend .ul-nostyle;
+    li{
+      &:before{
+        @extend .icon-foetex-blank;
+        content : icon-char(foetex-arrowright);
+        font-size : inherit;
+        line-height : 1;
+      }
+      a{
+
+      }
+    }
+  }
+}

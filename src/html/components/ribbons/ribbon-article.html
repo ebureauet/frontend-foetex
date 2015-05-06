@@ -1,0 +1,75 @@
+<div class="ribbon container-fluid article @@ribbon-category">
+
+  <div class="article__top row">
+    @@include('../modules/article__top.html')
+  </div>
+
+  <div class="article__block withsidebar row">
+
+    <div class="article__block__main">
+      <article class="content">
+        <h1>Lorem ipsum dolla meri falli busta. Von melli bastima con grabilasti.</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h3>
+        <p><img class="pull-right" src="images/picture-article-1.jpg" alt="" > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+        <blockquote>
+        <p>As my fellow HTML5 Doctor, Oli Studholme has showed, people seldom quote exactly – so sacrosanctity of the quoted text isn’t a useful ideal – and in print etc, citations almost always appear as part of the quotation – it’s highly conventional.</p>
+        <footer>
+          <cite><a href="#">Føtex mester mester - Navn Navnesen</a></cite>
+        </footer>
+        </blockquote>
+        <h3>Subheader mellem overskrift</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nulla, reprehenderit magnam, eaque magni nobis laboriosam maiores dolores sit omnis impedit. Quidem, quod ex perferendis, autem saepe illo ea illum? Delectus, debitis minus beatae accusamus aliquid quas tempore itaque labore quidem, fugiat velit nulla voluptatem nihil enim similique? Qui cum aliquam obcaecati molestiae, expedita sequi eos exercitationem.</p>
+        <p>Laboriosam at exercitationem eligendi sunt, quidem quisquam ad dolores ipsam modi quia, illo fugiat dolorem ratione, veniam recusandae assumenda quae vero, optio praesentium harum. Omnis, similique quo tempore. Consectetur fugit itaque harum sed velit, autem libero necessitatibus odio? </p>
+        <p>Cumque libero nulla excepturi nemo similique vitae possimus praesentium dolorem saepe, qui quaerat enim quo ut numquam, obcaecati nobis suscipit. Quae cum ut, officia officiis quo ipsum minus iure, iusto est error consequuntur molestiae dolores fugit vel cupiditate.</p>
+        <img class="img-responsive center-block" src="images/picture-article-2.jpg" alt="">
+        <h3>Subheader mellem overskrift</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolorum animi deleniti accusamus officia, non. Dolorem ex quaerat natus earum quisquam, hic fugiat voluptates, excepturi est, eius non dolore ad.</p>
+        <ul>
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Sit cum fuga ut!</li>
+          <li>Autem iusto facere facilis.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur culpa accusamus dolore officiis iusto inventore, iure sint sunt quis! Modi officiis nulla in ad, sequi nemo nam necessitatibus obcaecati velit perferendis error sed saepe inventore, vel doloribus tempore dolore odit earum? Sapiente beatae vitae unde magnam mollitia, omnis assumenda?</p>
+      </article>
+    </div>
+
+    <div class="article__block__sidebar cols--solo">
+      <div class="widget">
+        <h2>Seneste artikler</h2>
+        @@include('../modules/sidelists--articles.html')
+      </div>
+      <div class="widget">
+        <h2>Se oagså</h2>
+        @@include('../modules/columnbox--quicklinks.html',{
+          "category" : "baby",
+          "imgsrc" : "images/img-baby-3.jpg",
+          "imgalt" : "baby1",
+          "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+          "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+          "foottext" : "Læs denne artikel",
+          "footlink" : "#",
+          "stamptype" : "months",
+          "stampmeta" : "<span>0-6</span><span>måneder</span>"
+        })
+      </div>
+      <div class="widget">
+        <h2>Test</h2>
+        @@include('../modules/columnbox--cta1.html',{
+          "category" : "baby",
+          "imgsrc"  : "images/img-baby-1.jpg",
+          "imgalt"  : "baby1",
+          "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+          "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+          "foottext" : "Læs denne artikel",
+          "footlink" : "#",
+          "stamptype" : "savings",
+          "stampmeta" : "<span>Spar</span><span>45,-</span>"
+        })
+      </div>
+    </div>
+
+  </div>
+
+</div>

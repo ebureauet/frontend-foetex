@@ -5,18 +5,15 @@
 //reset
 @import "lib/normalize";
 
-//framework
-@import "lib/frameworks";
-
 //variables
-@import "components/variables";
-
-
-@import "lib/awesome-bootstrap-checkbox";
+@import "general/variables";
 
 //mixins
 @import "mixins/font";
 @import "mixins/transforms";
+
+//framework
+@import "lib/frameworks";
 
 //base styles
 @import "general/base-styles";

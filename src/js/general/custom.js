@@ -3,10 +3,10 @@ $('document').ready(function(){
 });
 
 $(window).load(function() {
-  equalheight('.columnbox--quatre > *');
+  equalheight('.cols--trio > *, .cols--quartet > *');
 });
 
 
 $(window).resize(function(){
-  equalheight('.columnbox--quatre > *');
+  equalheight('.cols--trio > *, .cols--quartet > *');
 });
