@@ -3,17 +3,41 @@
 
 .sidelists{
   &--articles{
-    font-size : 20px;
+    $fntsz : 20px;
+    font-size : $fntsz;
     @extend .ul-nostyle;
     li{
+      padding-bottom : 20px;
       &:before{
         @extend .icon-foetex-blank;
         content : icon-char(foetex-arrowright);
         font-size : inherit;
-        line-height : 1;
+        position : absolute;
+        left : 0px;
+        line-height:1;
       }
       a{
-
+        @include font('chevin-light');
+        margin-left : $fntsz;
+        display: block;
+        line-height:1;
+      }
+    }
+  }
+  &--archives{
+    $fntsz : 20px;
+    font-size : $fntsz;
+    @extend .ul-nostyle;
+    li{
+      padding-bottom : 20px;
+      a{
+        @include font('chevin-light');
+        display: block;
+        line-height:1;
+        span{
+          margin-left : 10px;
+          color : $foetex-blue;
+        }
       }
     }
   }

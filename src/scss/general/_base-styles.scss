@@ -18,6 +18,10 @@
   font-size : $foetex-p;
 }
 
+a:focus, a:hover{
+  text-decoration : none;
+}
+
 input:focus {
     outline: none!important;
 }
@@ -264,3 +268,4 @@ $bgcolor : $foetex-blue;
 @import 'components/modules/columnbox--quicklinks';
 @import 'components/modules/sidelists';
 @import 'components/modules/article';
+@import 'components/modules/gallery';

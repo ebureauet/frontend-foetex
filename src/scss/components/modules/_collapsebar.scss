@@ -5,7 +5,10 @@
     padding-bottom : 0.83em;
   }
   &__button{
+    padding: 20px 0px;
+    margin: 0px;
     cursor : pointer;
+    line-height: 32px;
     span{
       font-size : $foetex-icon-md;
       line-height : $foetex-icon-md;

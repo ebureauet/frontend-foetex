@@ -32,14 +32,41 @@ inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           <li>Autem iusto facere facilis.</li>
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur culpa accusamus dolore officiis iusto inventore, iure sint sunt quis! Modi officiis nulla in ad, sequi nemo nam necessitatibus obcaecati velit perferendis error sed saepe inventore, vel doloribus tempore dolore odit earum? Sapiente beatae vitae unde magnam mollitia, omnis assumenda?</p>
+
+        @@include('../modules/gallery.html')
+
+
+        <p>Consectetur consequatur culpa accusamus dolore officiis iusto inventore, iure sint sunt quis! Modi officiis nulla in ad, sequi nemo nam necessitatibus obcaecati velit.</p>
+
+        @@include('../modules/collapsebar.html',{
+          "itemid" : "q1",
+          "itemtitle" : "Spørgsmål",
+          "itemcontent" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, accusantium, laudantium. Delectus itaque mollitia, unde, enim odio accusantium dolorum minus dolorem natus sunt iure corrupti dolore nemo vero. Aspernatur, magnam!",
+          "addclass" : ""
+        })
+
+        @@include('../modules/collapsebar.html',{
+          "itemid" : "q2",
+          "itemtitle" : "Spørgsmål",
+          "itemcontent" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, accusantium, laudantium. Delectus itaque mollitia, unde, enim odio accusantium dolorum minus dolorem natus sunt iure corrupti dolore nemo vero. Aspernatur, magnam!",
+          "addclass" : ""
+        })
+
       </article>
     </div>
 
     <div class="article__block__sidebar cols--solo">
+
       <div class="widget">
         <h2>Seneste artikler</h2>
         @@include('../modules/sidelists--articles.html')
       </div>
+
+      <div class="widget">
+        <h2>Arkiv</h2>
+        @@include('../modules/sidelists--archives.html')
+      </div>
+
       <div class="widget">
         <h2>Se oagså</h2>
         @@include('../modules/columnbox--quicklinks.html',{
@@ -54,6 +81,7 @@ inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           "stampmeta" : "<span>0-6</span><span>måneder</span>"
         })
       </div>
+
       <div class="widget">
         <h2>Test</h2>
         @@include('../modules/columnbox--cta1.html',{
@@ -68,6 +96,7 @@ inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           "stampmeta" : "<span>Spar</span><span>45,-</span>"
         })
       </div>
+
     </div>
 
   </div>

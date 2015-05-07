@@ -1,0 +1,35 @@
+.gallery{
+  &.row{
+    padding: 0px!important;
+    background : transparent;
+    div{
+      figure{
+        background-size : cover;
+        background-position : center;
+        background-repeat : no-repeat;
+        margin-bottom : 20px;
+      }
+      &.col-sm-7{
+        figure:nth-child(1){
+          height : 360px;
+        }
+        figure:nth-child(2){
+          height : 330px;
+        }
+      }
+      &.col-sm-5{
+        figure:nth-child(1){
+          height : 260px;
+        }
+        figure:nth-child(2){
+          height : 430px;
+        }
+      }
+    }
+  }
+  img{
+    width : 100%;
+    height : auto;
+    visibility : hidden;
+  }
+}

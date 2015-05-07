@@ -25,14 +25,12 @@
 
 @each $foetex-category-map, $map in $foetex-category-maps {
   .category-#{$foetex-category-map} {
-    .ribbon{
-      .headtitle{
-        &__bar{
-          &__title{
-            &--b{
-              &.color-responsive{
-                color : map-get( $map, 'color');
-              }
+    .headtitle{
+      &__bar{
+        &__title{
+          &--b{
+            &.color-responsive{
+              color : map-get( $map, 'color');
             }
           }
         }
