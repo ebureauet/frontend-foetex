@@ -77,9 +77,15 @@ a:hover{
   > .row{
     margin: 0 auto;
     width : $foetex-max-width;
-    @include breakpoint($respond){
+  }
+  @include breakpoint($respond){
+    > .row{
       width : 100%;
     }
+  }
+  @include breakpoint($handhelds){
+    padding-left : 0;
+    padding-right : 0;
   }
 }
 

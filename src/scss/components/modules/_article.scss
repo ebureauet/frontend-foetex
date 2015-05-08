@@ -47,6 +47,18 @@
         @extend .col-md-9;
         article.content{
           max-width: 830px;
+          blockquote{
+            margin-left:0;
+            margin-right:0;
+            padding:inherit;
+            background-color : $foetex-ltgrey;
+            p, footer, small, .small{
+              margin-left : 0px;
+            }
+            &:before{
+              display : none;
+            }
+          }
         }
       }
       .article__block__sidebar{
@@ -66,6 +78,20 @@
           }
         }
       }
+    }
+  }
+  @include breakpoint($handhelds){
+    .row{
+      padding-left : 0px!important;
+      padding-right : 0px!important;
+      article{
+        padding-left : 10px!important;
+        padding-right : 10px!important;
+      }
+    }
+    .article__block__main > img, .article__block__main p > img {
+      width : 100%;
+      height : auto;
     }
   }
 }
