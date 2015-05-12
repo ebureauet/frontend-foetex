@@ -1,4 +1,6 @@
 .head{
+  z-index : 10;
+  position: relative;
   .top{
     background-color : $foetex-blue;
     color : $foetex-white;

@@ -144,12 +144,25 @@ a:hover{
 
 
 .content{
-  background-image : url('../images/bg.jpg');
-  background-repeat : no-repeat;
-  background-size: 100% 335px;
-  background-position : top center;
+  // background-image : url('../images/bg.jpg');
+  // background-repeat : no-repeat;
+  // background-size : 100% 335px;
+  // background-position : top center;
+  position : relative;
+  .background{
+    z-index : -1;
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    width : 100%;
+    background-size : cover;
+    background-position : center center;
+    background-repeat : no-repeat;
+    height : 500px;
+  }
 
   .ribbon{
+    z-index : 1;
     &:nth-child(2){
       .row:first-child{
         border-top-left-radius : $foetex-content-body;

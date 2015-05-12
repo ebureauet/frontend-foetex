@@ -46,7 +46,7 @@
       &--button{
         &__button{
           .btn{
-            @include button-variant($foetex-white, desaturate(darken(map-get($map, 'color'),10%),15%), desaturate(darken(map-get($map, 'color'),20%),15%));
+            @include button-variant($foetex-white, desaturate(darken(map-get($map, 'color'),10%),15%), desaturate(darken(map-get($map, 'color'),10%),15%));
             &.selected{
               @include button-variant($foetex-white, map-get($map, 'color'), map-get($map, 'color'));
             }
