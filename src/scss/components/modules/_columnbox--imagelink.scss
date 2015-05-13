@@ -1,0 +1,44 @@
+
+//======= module: columnbox--imagelink =======
+@each $foetex-category-map, $map in $foetex-category-maps {
+  .category-#{$foetex-category-map}{
+    .columnbox--imagelink{
+      .imagelink{
+        background-color: map-get( $map, 'color');
+        background-image: url('../images/'+map-get( $map, 'texture'));
+      }
+    }
+  }
+}
+
+.columnbox--imagelink{
+  $paddingsW:20px;
+  $borderR:20px;
+  .imagelink{
+    display: block;
+    overflow : hidden;
+    border-bottom-left-radius : 10px;
+    border-bottom-right-radius : 10px;
+    height : inherit;
+    &__image{
+      width : 100%;
+      height : inherit;
+      display : block;
+      position : relative;
+      img{
+        display : inline;
+        margin-left : 50%;
+        position : absolute;
+        top : 0;
+        @include translateX(-50%);
+      }
+    }
+  }
+  @each $foetex-category-map, $map in $foetex-category-maps {
+    &.cat-#{$foetex-category-map} {
+      .imagelink{
+        background-color: map-get( $map, 'color');
+      }
+    }
+  }
+}

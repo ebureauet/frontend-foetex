@@ -1,68 +1,8 @@
 <!-- ribbon-cover class is a ribbon that should contain a background image -->
 <!-- ribbon-cover-filter is a ribbon variant that is a container for filtered items -->
-<div class="ribbon container-fluid @@ribbon-category">
+<div class="ribbon ribbon--cover container-fluid @@ribbon-category" style="background-image:url(@@bannerimg)">
 
-  <div class="filterbox filterbox--button row">
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "selected",
-      "btnid" : "btn-filter-1",
-      "btntxt" : "Alle aldre"
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-2",
-      "btntxt" : "før fødsel"
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-3",
-      "btntxt" : "0-3 mdr."
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-4",
-      "btntxt" : "3-6 mdr."
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-5",
-      "btntxt" : "6-9 MDR."
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-6",
-      "btntxt" : "9-12 MDR."
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-7",
-      "btntxt" : "12- 18 MDR."
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-8",
-      "btntxt" : "18-24 MDR."
-    })
-
-    @@include('../modules/filterbox--button__button.html',{
-      "btnaddclass" : "",
-      "btnid" : "btn-filter-8",
-      "btntxt" : "2-3 ÅR"
-    })
-
-    <div class="col-sm-12 separator"><div></div></div>
-
-  </div>
-
-  <div class="filterboxitems cols--quartet row">
+  <div class="cols--quartet row">
 
     @@include('../modules/columnbox--cta1.html',{
       "category" : "",
@@ -92,7 +32,7 @@
     })
 
     @@include('../modules/columnbox--cta1.html',{
-      "category" : "baby",
+      "category" : "",
       "imgsrc" : "images/img-baby-3.jpg",
       "imgalt" : "baby1",
       "heading" : "Anbefalinger om mad til spæd- og småbørn",
@@ -106,7 +46,7 @@
     })
 
     @@include('../modules/columnbox--cta1.html',{
-      "category" : "recipe",
+      "category" : "",
       "imgsrc" : "images/img-food-1.jpg",
       "imgalt" : "baby1",
       "heading" : "Spaghetti a la Lady og Vagabonden",
@@ -122,6 +62,7 @@
   </div>
 
   <div class="buttonseeall row">
-    <button class="">vis alle tilbud</button>
+    <button class="">se alle opskrifter lige her</button>
   </div>
+
 </div>

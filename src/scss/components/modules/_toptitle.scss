@@ -1,0 +1,34 @@
+.toptitle{
+  font-size : 77.5px;
+  text-shadow: 0 1px 1px #000000;
+  color : $foetex-ltwhite;
+  display : inline-block;
+  position : relative;
+  margin-top : 30px;
+  margin-bottom : 100px;
+  span{
+    line-height : 1;
+    display : block;
+  }
+  &__line1{
+    @include font('chevin-medium');
+    width : 85%;
+    margin : 0 auto;
+    font-size : 0.95em;
+    text-align : left;
+  }
+  &__line2{
+    @include font('chevin-bold');
+    text-transform : uppercase;
+    font-size : 1em;
+    width : 100%;
+    text-align : center;
+  }
+  &__line3{
+    @include font('chevin-medium');
+    width : 85%;
+    margin : 0 auto;
+    font-size : 0.95em;
+    text-align : right;
+  }
+}

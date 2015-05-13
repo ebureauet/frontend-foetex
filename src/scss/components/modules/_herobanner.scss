@@ -4,7 +4,7 @@ $iconsize : 70px;
   text-transform : uppercase;
   color : $foetex-white;
   &.row{
-    padding-top : 125px;
+    padding-top : 125px !important;
   }
   &__content{
     text-align : center;

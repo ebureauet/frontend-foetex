@@ -28,7 +28,7 @@ input:focus {
 
 body{
   @extend .foetex-p;
-  background-image : url($foetex-bg-img-white);
+  background-image : url($foetex-bg-ltgrey);
   background-repeat : repeat;
   background-color : $foetex-ltgrey;
 }
@@ -181,8 +181,9 @@ a:hover{
 .content{
 
   .ribbon{
+    background-repeat : repeat;
     .row{
-      background-image : url($foetex-bg-img-white);
+      background-image : url($foetex-bg-ltgrey);
       background-repeat : repeat;
       padding-left : 30px;
       padding-right : 30px;
@@ -202,6 +203,14 @@ a:hover{
           >.separator > div{
             border-bottom : 1px solid darken(map-get($map, 'color'), 20%);
           }
+        }
+      }
+    }
+    @each $foetex-bg-texture, $map in $foetex-bg-textures {
+      &.bg-#{$foetex-bg-texture} {
+        background-image : url('../images/'+map-get( $map, 'texture'));
+        .row{
+          background : transparent;
         }
       }
     }
@@ -275,6 +284,8 @@ a:hover{
 
 $bgcolor : $foetex-blue;
 
+
+@import 'components/modules/toptitle';
 @import 'components/modules/collapsebar';
 @import 'components/modules/filterbox';
 @import 'components/modules/buttonseeall';
@@ -282,9 +293,11 @@ $bgcolor : $foetex-blue;
 @import 'components/modules/newsletterform';
 @import 'components/modules/headtitle';
 @import 'components/modules/carouselbar';
+@import 'components/modules/stamptypes';
 @import 'components/modules/columnbox--cta1';
 @import 'components/modules/columnbox--cta2';
 @import 'components/modules/columnbox--quicklinks';
+@import 'components/modules/columnbox--imagelink';
 @import 'components/modules/sidelists';
 @import 'components/modules/article';
 @import 'components/modules/gallery';

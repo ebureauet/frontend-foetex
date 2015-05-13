@@ -18,6 +18,11 @@ $foetex-category-maps: (
   wine : (color : #602134, icon : icon-char(foetex-beverages), texture : 'bg-texture-wood.jpg')
 );
 
+$foetex-bg-textures: (
+  ltgrey : (texture : 'bg-foetex-ltgrey.jpg'),
+  dkwhite : (texture : 'bg-foetex-dkwhite.jpg')
+);
+
 //default font sizes
 $foetex-h1 : 46px;
 $foetex-h2 : 24px;
@@ -39,8 +44,8 @@ $foetex-content-body : 20px;
 $foetex-paddings-article : 50px;
 
 
-//background textures
-$foetex-bg-img-white : "../images/bg-foetex-white.jpg";
+//direct variable background textures
+$foetex-bg-ltgrey : "../images/bg-foetex-ltgrey.jpg";
 
 .color--normal{
   background : transparent;
