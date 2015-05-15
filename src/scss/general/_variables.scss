@@ -11,11 +11,11 @@ $foetex-white : #f3f3f3;
 //color categories map
 $foetex-category-maps: (
   baby : (color : #89c6bd, icon : icon-char(foetex-ducky), texture : 'bg-texture-wood-baby.jpg'),
-  recipe : (color : #0f4225, icon : icon-char(foetex-cookingpot), texture : 'bg-texture-wood.jpg'),
+  recipe : (color : #3C643C, icon : icon-char(foetex-cookingpot), texture : 'bg-texture-wood-recipe.jpg'),
   butchery : (color : #012d5a, icon : icon-char(foetex-cookingpot), texture : 'bg-texture-wood-baby.jpg'),
   bakery : (color : #4d3531, icon: icon-char(foetex-cookingpot), texture : 'bg-texture-wood.jpg'),
   greengoods : (color : #04442c, icon : icon-char(foetex-cookingpot), texture : 'bg-texture-wood.jpg'),
-  wine : (color : #602134, icon : icon-char(foetex-beverages), texture : 'bg-texture-wood.jpg')
+  wine : (color : #602134, icon : icon-char(foetex-beverages), texture : 'bg-texture-wood-wine.jpg')
 );
 
 $foetex-bg-textures: (

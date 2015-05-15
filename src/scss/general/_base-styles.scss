@@ -185,8 +185,8 @@ a:hover{
     .row{
       background-image : url($foetex-bg-ltgrey);
       background-repeat : repeat;
-      padding-left : 30px;
-      padding-right : 30px;
+      padding-left : 40px;
+      padding-right : 40px;
       >.separator{
         @extend .col-sm-12;
         >div{
@@ -225,6 +225,10 @@ a:hover{
     .cols--quartet > *{
       @extend .col-sm-6;
       @extend .col-md-3;
+    }
+    .cols--sextet > *{
+      @extend .col-sm-2;
+      @extend .col-md-2;
     }
   }
 

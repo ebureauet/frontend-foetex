@@ -34,3 +34,8 @@ $('.gallery').find('img').each(function(){
   $(this).wrap('<figure style="background-image:url('+imgsrc+')"></figure>');
 
 });
+
+
+$(function () {
+  $('#myTab a:last').tab('show')
+})

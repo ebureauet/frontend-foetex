@@ -1,0 +1,226 @@
+<!-- ribbon-cover class is a ribbon that should contain a background image -->
+<!-- ribbon-cover-filter is a ribbon variant that is a container for filtered items -->
+<div class="ribbon container-fluid @@ribbon-category">
+
+  <div class="nav nav-tabs row cols--sextet" role="tablist" id="myTab">
+
+    @@include('../modules/filterbox--button__button.html',{
+      "addclass" : "active",
+      "btnaddclass" : "selected",
+      "btnid" : "btn-filter-1",
+      "btntxt" : "Home",
+      "tabcontentid" : "home"
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "addclass" : "",
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-2",
+      "btntxt" : "Profile",
+      "tabcontentid" : "profile"
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "addclass" : "",
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-3",
+      "btntxt" : "Messages",
+      "tabcontentid" : "messages"
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "addclass" : "",
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-4",
+      "btntxt" : "Settings",
+      "tabcontentid" : "settings"
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "addclass" : "",
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-5",
+      "btntxt" : "Home2",
+      "tabcontentid" : "home2"
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "addclass" : "",
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-6",
+      "btntxt" : "Profile2",
+      "tabcontentid" : "profile2"
+    })
+  </div>
+
+  <div class="tab-content row">
+    <div role="tabpanel" class="tab-pane row cols--sextet active" id="home">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo!</p>
+      <p>Qui, magnam commodi neque quia, voluptatum dolor architecto consequatur veritatis!</p>
+      <p>Sint, alias culpa corrupti omnis laboriosam iusto id voluptates nisi.</p>
+      <p>Optio blanditiis, dolorem corrupti mollitia accusantium, dicta dolores consequatur non.</p>
+      <p>Quidem vitae nulla molestias ullam iusto soluta, autem dolorem dignissimos.</p>
+      <p>Dolores possimus corporis, magni commodi eaque ipsa fugiat repudiandae quaerat!</p>
+    </div>
+    <div role="tabpanel" class="tab-pane row cols--sextet" id="profile">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, tempora.</p>
+      <p>Minus itaque, consectetur fugiat aliquam ipsum debitis possimus ab non.</p>
+      <p>Necessitatibus, unde, illo! Dolorum, placeat ullam reiciendis nihil, omnis aspernatur!</p>
+      <p>Laudantium iure obcaecati maxime vitae quasi ut, earum quibusdam minima.</p>
+      <p>Explicabo quis at perferendis quod culpa iste vel numquam, modi?</p>
+    </div>
+    <div role="tabpanel" class="tab-pane row cols--sextet" id="messages">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, doloribus.</p>
+      <p>Dignissimos dolorum et odio nihil rerum facere temporibus, consequatur similique.</p>
+      <p>Earum, vitae ea quis provident! Sequi, velit reprehenderit cum reiciendis?</p>
+      <p>Sunt facilis, ea architecto cumque adipisci quaerat quod dignissimos temporibus!</p>
+      <p>Explicabo ad magni cumque voluptate quod veritatis ipsam odit, quisquam.</p>
+      <p>Nostrum libero omnis officia nisi porro sunt. Iste, quibusdam non?</p>
+    </div>
+    <div role="tabpanel" class="tab-pane row cols--sextet" id="settings">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, fugiat.</p>
+      <p>Laudantium optio omnis temporibus beatae veritatis sint et tenetur repudiandae?</p>
+      <p>Illo saepe similique dolor quos asperiores quis sunt deserunt incidunt.</p>
+      <p>Perspiciatis velit, ab, esse sed dolore sapiente deserunt iste expedita.</p>
+      <p>Iste quae rerum deserunt magni sit sint impedit, doloremque illum.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane row cols--sextet active" id="home2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nam.</p>
+      <p>Voluptate aliquam odit esse aliquid est reprehenderit, recusandae repellendus labore.</p>
+      <p>At fuga voluptas, quia veniam suscipit vel possimus, saepe eos.</p>
+      <p>Voluptatibus atque, reprehenderit, temporibus necessitatibus ratione rerum dolore placeat recusandae?</p>
+      <p>Neque, alias assumenda illo accusantium doloribus totam odit laborum deleniti.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane row cols--sextet" id="profile2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sequi!</p>
+      <p>Error suscipit non veritatis culpa sunt, unde obcaecati quibusdam et.</p>
+      <p>Reiciendis dolorem praesentium laudantium, delectus unde quia. Totam, consequuntur, saepe.</p>
+      <p>Ullam tempora at expedita sed pariatur, tenetur, assumenda ab aut!</p>
+      <p>Debitis cum, soluta quas aspernatur maiores facere consequuntur repellendus! Est.</p>
+    </div>
+  </div>
+
+
+  <div class="filterbox filterbox--button row">
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "selected",
+      "btnid" : "btn-filter-1",
+      "btntxt" : "Alle aldre"
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-2",
+      "btntxt" : "før fødsel"
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-3",
+      "btntxt" : "0-3 mdr."
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-4",
+      "btntxt" : "3-6 mdr."
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-5",
+      "btntxt" : "6-9 MDR."
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-6",
+      "btntxt" : "9-12 MDR."
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-7",
+      "btntxt" : "12- 18 MDR."
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-8",
+      "btntxt" : "18-24 MDR."
+    })
+
+    @@include('../modules/filterbox--button__button.html',{
+      "btnaddclass" : "",
+      "btnid" : "btn-filter-8",
+      "btntxt" : "2-3 ÅR"
+    })
+
+    <div class="col-sm-12 separator"><div></div></div>
+
+  </div>
+
+  <div class="filterboxitems cols--quartet row">
+
+    @@include('../modules/columnbox--cta1.html',{
+      "category" : "",
+      "imgsrc"  : "images/img-baby-1.jpg",
+      "imgalt"  : "baby1",
+      "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+      "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+      "saleprice" : "2 stk. 49,95,-",
+      "foottext" : "Se alle tilbud",
+      "footlink" : "#",
+      "stamptype" : "savings",
+      "stampmeta" : "<span>Spar</span><span>45,-</span>"
+    })
+
+    @@include('../modules/columnbox--cta1.html',{
+      "category" : "",
+      "imgsrc" : "images/img-baby-2.jpg",
+      "imgalt" : "baby1",
+      "heading" : "Frit valg på alle Neutral produkter til børn",
+      "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+      "saleprice" : "Pr. stk. 10,-",
+      "foottext" : "Se alle tilbud",
+      "footlink" : "#",
+      "stamptype" : "weeks",
+      "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+      "addclass" : ""
+    })
+
+    @@include('../modules/columnbox--cta1.html',{
+      "category" : "baby",
+      "imgsrc" : "images/img-baby-3.jpg",
+      "imgalt" : "baby1",
+      "heading" : "Anbefalinger om mad til spæd- og småbørn",
+      "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+      "saleprice" : "",
+      "foottext" : "Læs denne artikel",
+      "footlink" : "#",
+      "stamptype" : "months",
+      "stampmeta" : "<span>0-6</span><span>måneder</span>",
+      "addclass" : ""
+    })
+
+    @@include('../modules/columnbox--cta1.html',{
+      "category" : "recipe",
+      "imgsrc" : "images/img-food-1.jpg",
+      "imgalt" : "baby1",
+      "heading" : "Spaghetti a la Lady og Vagabonden",
+      "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+      "saleprice" : "",
+      "foottext" : "Se denne opskrift",
+      "footlink" : "#",
+      "stamptype" : "time",
+      "stampmeta" : "<span>30</span><span>min.</span>",
+      "addclass" : ""
+    })
+
+  </div>
+
+  <div class="buttonseeall row">
+    <button class="">vis alle tilbud</button>
+  </div>
+</div>
