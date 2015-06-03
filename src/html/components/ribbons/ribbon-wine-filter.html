@@ -2,17 +2,17 @@
 <!-- ribbon-cover-filter is a ribbon variant that is a container for filtered items -->
 <div class="ribbon container-fluid @@ribbon-category">
 
-  <div class="nav nav-tabs row cols--sextet" role="tablist" id="myTab">
+  <div class="tabsbox-nav nav nav-tabs row cols--sextet" role="tablist" id="myTab">
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
       "addclass" : "active",
       "btnaddclass" : "selected",
       "btnid" : "btn-filter-1",
-      "btntxt" : "Home",
-      "tabcontentid" : "home"
+      "btntxt" : "tilbud",
+      "tabcontentid" : "tilbud"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
       "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-2",
@@ -20,7 +20,7 @@
       "tabcontentid" : "profile"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
       "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-3",
@@ -28,7 +28,7 @@
       "tabcontentid" : "messages"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
       "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-4",
@@ -36,40 +36,104 @@
       "tabcontentid" : "settings"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
       "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-5",
-      "btntxt" : "Home2",
-      "tabcontentid" : "home2"
+      "btntxt" : "tilbud2",
+      "tabcontentid" : "tilbud2"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
       "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-6",
       "btntxt" : "Profile2",
       "tabcontentid" : "profile2"
     })
+
+    <div class="col-sm-12 separator"><div></div></div>
   </div>
 
-  <div class="tab-content row">
-    <div role="tabpanel" class="tab-pane row cols--sextet active" id="home">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, quo!</p>
-      <p>Qui, magnam commodi neque quia, voluptatum dolor architecto consequatur veritatis!</p>
-      <p>Sint, alias culpa corrupti omnis laboriosam iusto id voluptates nisi.</p>
-      <p>Optio blanditiis, dolorem corrupti mollitia accusantium, dicta dolores consequatur non.</p>
-      <p>Quidem vitae nulla molestias ullam iusto soluta, autem dolorem dignissimos.</p>
-      <p>Dolores possimus corporis, magni commodi eaque ipsa fugiat repudiandae quaerat!</p>
+  <div class="tabsbox-content tab-content row">
+    <div role="tabpanel" class="tabsbox-content__pane tab-pane cols--sextet active" id="tilbud">
+
+      @@include('../modules/tabsbox-content__pane__list.html',{
+        "title" : "Populære lande",
+        "listitem1" : "<a href='#'>Italien</a>",
+        "listitem2" : "<a href='#'>Australien</a>",
+        "listitem3" : "<a href='#'>Chile</a>",
+        "listitem4" : "<a href='#'>Frankrig</a>",
+        "listitem5" : "<a href='#'>Spanien</a>",
+        "listitem6" : "<a href='#'>Sydafrika</a>",
+        "seealltext" : "Se alle lande",
+        "seealllink" : "#",
+        "addclass" : ""
+      })
+
+      @@include('../modules/tabsbox-content__pane__list.html',{
+        "title" : "Populære områder",
+        "listitem1" : "<a href='#'>Veneto</a>",
+        "listitem2" : "<a href='#'>Toscana</a>",
+        "listitem3" : "<a href='#'>Rohne</a>",
+        "listitem4" : "<a href='#'>Alsace</a>",
+        "listitem5" : "<a href='#'>Rioja</a>",
+        "listitem6" : "<a href='#'>Colchagua Valley</a>",
+        "seealltext" : "Se alle områder",
+        "seealllink" : "#",
+        "addclass" : ""
+      })
+
+      @@include('../modules/tabsbox-content__pane__list.html',{
+        "title" : "Populære vintyper",
+        "listitem1" : "<a href='#'>Amarone</a>",
+        "listitem2" : "<a href='#'>Valpoliciella</a>",
+        "listitem3" : "<a href='#'>Brunello</a>",
+        "listitem4" : "<a href='#'>Pomerol</a>",
+        "listitem5" : "<a href='#'>Sancerre</a>",
+        "listitem6" : "<a href='#'>Chablis</a>",
+        "seealltext" : "Se alle vintyper",
+        "seealllink" : "#",
+        "addclass" : ""
+      })
+
+      @@include('../modules/tabsbox-content__pane__list.html',{
+        "title" : "Populære vinhuse",
+        "listitem1" : "<a href='#'>Masi Agricola</a>",
+        "listitem2" : "<a href='#'>Vina MontGras</a>",
+        "listitem3" : "<a href='#'>Luigi Righetti</a>",
+        "listitem4" : "<a href='#'>Bodegas Castano</a>",
+        "listitem5" : "<a href='#'>Drosty Hof</a>",
+        "listitem6" : "<a href='#'>Wolf Blass</a>",
+        "seealltext" : "Se alle vinhuse",
+        "seealllink" : "#",
+        "addclass" : ""
+      })
+
+      @@include('../modules/tabsbox-content__pane__list.html',{
+        "title" : "Priser",
+        "listitem1" : "<a href='#'>0 - 50</a>",
+        "listitem2" : "<a href='#'>51 - 75</a>",
+        "listitem3" : "<a href='#'>76 - 100</a>",
+        "listitem4" : "<a href='#'>101 - 125</a>",
+        "listitem5" : "<a href='#'>126 - 150</a>",
+        "listitem6" : "<a href='#'>151 -</a>",
+        "seealltext" : "Se alle vinhuse",
+        "seealllink" : "#",
+        "addclass" : ""
+      })
+
+      <div class="col-sm-12 separator"><div></div></div>
     </div>
-    <div role="tabpanel" class="tab-pane row cols--sextet" id="profile">
+
+    <div role="tabpanel" class="tab-pane cols--sextet" id="profile">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, tempora.</p>
       <p>Minus itaque, consectetur fugiat aliquam ipsum debitis possimus ab non.</p>
       <p>Necessitatibus, unde, illo! Dolorum, placeat ullam reiciendis nihil, omnis aspernatur!</p>
       <p>Laudantium iure obcaecati maxime vitae quasi ut, earum quibusdam minima.</p>
       <p>Explicabo quis at perferendis quod culpa iste vel numquam, modi?</p>
     </div>
-    <div role="tabpanel" class="tab-pane row cols--sextet" id="messages">
+    <div role="tabpanel" class="tab-pane cols--sextet" id="messages">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, doloribus.</p>
       <p>Dignissimos dolorum et odio nihil rerum facere temporibus, consequatur similique.</p>
       <p>Earum, vitae ea quis provident! Sequi, velit reprehenderit cum reiciendis?</p>
@@ -77,21 +141,21 @@
       <p>Explicabo ad magni cumque voluptate quod veritatis ipsam odit, quisquam.</p>
       <p>Nostrum libero omnis officia nisi porro sunt. Iste, quibusdam non?</p>
     </div>
-    <div role="tabpanel" class="tab-pane row cols--sextet" id="settings">
+    <div role="tabpanel" class="tab-pane cols--sextet" id="settings">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, fugiat.</p>
       <p>Laudantium optio omnis temporibus beatae veritatis sint et tenetur repudiandae?</p>
       <p>Illo saepe similique dolor quos asperiores quis sunt deserunt incidunt.</p>
       <p>Perspiciatis velit, ab, esse sed dolore sapiente deserunt iste expedita.</p>
       <p>Iste quae rerum deserunt magni sit sint impedit, doloremque illum.</p>
     </div>
-    <div role="tabpanel" class="tab-pane row cols--sextet active" id="home2">
+    <div role="tabpanel" class="tab-pane cols--sextet" id="tilbud2">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nam.</p>
       <p>Voluptate aliquam odit esse aliquid est reprehenderit, recusandae repellendus labore.</p>
       <p>At fuga voluptas, quia veniam suscipit vel possimus, saepe eos.</p>
       <p>Voluptatibus atque, reprehenderit, temporibus necessitatibus ratione rerum dolore placeat recusandae?</p>
       <p>Neque, alias assumenda illo accusantium doloribus totam odit laborum deleniti.</p>
     </div>
-    <div role="tabpanel" class="tab-pane row cols--sextet" id="profile2">
+    <div role="tabpanel" class="tab-pane cols--sextet" id="profile2">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sequi!</p>
       <p>Error suscipit non veritatis culpa sunt, unde obcaecati quibusdam et.</p>
       <p>Reiciendis dolorem praesentium laudantium, delectus unde quia. Totam, consequuntur, saepe.</p>

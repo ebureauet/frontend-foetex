@@ -193,7 +193,7 @@ a:hover{
           width : 100%;
           height : 1px;
           border-bottom : 1px solid darken($foetex-blue, 10%);
-          margin-top : 20px
+          margin-bottom : 20px;
         }
       }
     }
@@ -292,6 +292,7 @@ $bgcolor : $foetex-blue;
 @import 'components/modules/toptitle';
 @import 'components/modules/collapsebar';
 @import 'components/modules/filterbox';
+@import 'components/modules/tabsbox';
 @import 'components/modules/buttonseeall';
 @import 'components/modules/herobanner';
 @import 'components/modules/newsletterform';

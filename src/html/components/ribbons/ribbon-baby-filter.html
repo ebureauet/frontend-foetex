@@ -2,122 +2,601 @@
 <!-- ribbon-cover-filter is a ribbon variant that is a container for filtered items -->
 <div class="ribbon container-fluid @@ribbon-category">
 
-  <div class="filterbox filterbox--button row">
+  <div class="tabsbox-nav nav nav-tabs row cols--sextet" role="tablist" id="">
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "active",
       "btnaddclass" : "selected",
       "btnid" : "btn-filter-1",
-      "btntxt" : "Alle aldre"
+      "btntxt" : "Alle aldre",
+      "tabcontentid" : "allealdre"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-2",
-      "btntxt" : "før fødsel"
+      "btntxt" : "før fødsel",
+      "tabcontentid" : "førfødsel"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-3",
-      "btntxt" : "0-3 mdr."
+      "btntxt" : "0-3 mdr.",
+      "tabcontentid" : "3mdr"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-4",
-      "btntxt" : "3-6 mdr."
+      "btntxt" : "3-6 mdr.",
+      "tabcontentid" : "6mdr"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-5",
-      "btntxt" : "6-9 MDR."
+      "btntxt" : "6-9 mdr.",
+      "tabcontentid" : "9mdr"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-6",
-      "btntxt" : "9-12 MDR."
+      "btntxt" : "9-12 mdr.",
+      "tabcontentid" : "12mdr"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-7",
-      "btntxt" : "12- 18 MDR."
+      "btntxt" : "12-18 mdr.",
+      "tabcontentid" : "18mdr"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
       "btnid" : "btn-filter-8",
-      "btntxt" : "18-24 MDR."
+      "btntxt" : "18-24 mdr.",
+      "tabcontentid" : "24mdr"
     })
 
-    @@include('../modules/filterbox--button__button.html',{
+    @@include('../modules/tabsbox-nav--button__button.html',{
+      "addclass" : "",
       "btnaddclass" : "",
-      "btnid" : "btn-filter-8",
-      "btntxt" : "2-3 ÅR"
+      "btnid" : "btn-filter-9",
+      "btntxt" : "2-3 ÅR",
+      "tabcontentid" : "3ar"
     })
 
     <div class="col-sm-12 separator"><div></div></div>
 
   </div>
 
-  <div class="filterboxitems cols--quartet row">
+  <div class="tabsbox-content tab-content row">
 
-    @@include('../modules/columnbox--cta1.html',{
-      "category" : "",
-      "imgsrc"  : "images/img-baby-1.jpg",
-      "imgalt"  : "baby1",
-      "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
-      "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
-      "saleprice" : "2 stk. 49,95,-",
-      "foottext" : "Se alle tilbud",
-      "footlink" : "#",
-      "stamptype" : "savings",
-      "stampmeta" : "<span>Spar</span><span>45,-</span>"
-    })
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet active" id="allealdre">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
 
-    @@include('../modules/columnbox--cta1.html',{
-      "category" : "",
-      "imgsrc" : "images/img-baby-2.jpg",
-      "imgalt" : "baby1",
-      "heading" : "Frit valg på alle Neutral produkter til børn",
-      "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
-      "saleprice" : "Pr. stk. 10,-",
-      "foottext" : "Se alle tilbud",
-      "footlink" : "#",
-      "stamptype" : "weeks",
-      "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
-      "addclass" : ""
-    })
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
 
-    @@include('../modules/columnbox--cta1.html',{
-      "category" : "baby",
-      "imgsrc" : "images/img-baby-3.jpg",
-      "imgalt" : "baby1",
-      "heading" : "Anbefalinger om mad til spæd- og småbørn",
-      "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
-      "saleprice" : "",
-      "foottext" : "Læs denne artikel",
-      "footlink" : "#",
-      "stamptype" : "months",
-      "stampmeta" : "<span>0-6</span><span>måneder</span>",
-      "addclass" : ""
-    })
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
 
-    @@include('../modules/columnbox--cta1.html',{
-      "category" : "recipe",
-      "imgsrc" : "images/img-food-1.jpg",
-      "imgalt" : "baby1",
-      "heading" : "Spaghetti a la Lady og Vagabonden",
-      "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
-      "saleprice" : "",
-      "foottext" : "Se denne opskrift",
-      "footlink" : "#",
-      "stamptype" : "time",
-      "stampmeta" : "<span>30</span><span>min.</span>",
-      "addclass" : ""
-    })
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="førfødsel">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-7.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Anbefalinger om lorem ipsum della meri",
+        "copy"    : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>Vordende</span><span>forældre</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-8.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6<br /></span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-9.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "year",
+        "stampmeta" : "<span>1-2</span><span>år</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "year",
+        "stampmeta" : "<span>2-3</span><span>år</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="3mdr">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="6mdr">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="9mdr">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="12mdr">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="18mdr">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="24mdr">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
+
+    <div role="tabpanel" class="tabsbox_content_pane columnbox tab-pane cols--quartet" id="3ar">
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc"  : "images/img-baby-1.jpg",
+        "imgalt"  : "baby1",
+        "heading" : "Uld børne undertøj fra 808 i 100% bomuld ",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "2 stk. 49,95,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "savings",
+        "stampmeta" : "<span>Spar</span><span>45,-</span>"
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "",
+        "imgsrc" : "images/img-baby-2.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Frit valg på alle Neutral produkter til børn",
+        "copy"    : "Fås i mange farver og størrelser fra 0 - 3 år.",
+        "saleprice" : "Pr. stk. 10,-",
+        "foottext" : "Se alle tilbud",
+        "footlink" : "#",
+        "stamptype" : "weeks",
+        "stampmeta" : "<span>Gælder<br /></span><span>uge 32</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "baby",
+        "imgsrc" : "images/img-baby-3.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Anbefalinger om mad til spæd- og småbørn",
+        "copy"    : "I denne uge har Helen Lyng Hansen fokus på sund og rigtig kost til de små. Hvornår er det godt at starte osv.",
+        "saleprice" : "",
+        "foottext" : "Læs denne artikel",
+        "footlink" : "#",
+        "stamptype" : "months",
+        "stampmeta" : "<span>0-6</span><span>måneder</span>",
+        "addclass" : ""
+      })
+
+      @@include('../modules/columnbox--cta1.html',{
+        "category" : "recipe",
+        "imgsrc" : "images/img-food-1.jpg",
+        "imgalt" : "baby1",
+        "heading" : "Spaghetti a la Lady og Vagabonden",
+        "copy"    : "Se hvordan du på en sund og nem måde kan lave en stor potion pasta med kødboller, hurtigt, nemt og som de fleste børn kan lide.",
+        "saleprice" : "",
+        "foottext" : "Se denne opskrift",
+        "footlink" : "#",
+        "stamptype" : "time",
+        "stampmeta" : "<span>30</span><span>min.</span>",
+        "addclass" : ""
+      })
+    </div>
 
   </div>
 

@@ -1,5 +1,10 @@
 $('document').ready(function(){
   //$('.columnbox--quatre').equalHeights();
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    //alert($(e.target).html());
+    equalheight('.tabsbox-content  .cols--trio > *, .tabsbox-content .cols--quartet > *');
+
+  })
 });
 
 $(window).load(function() {
@@ -34,8 +39,3 @@ $('.gallery').find('img').each(function(){
   $(this).wrap('<figure style="background-image:url('+imgsrc+')"></figure>');
 
 });
-
-
-$(function () {
-  $('#myTab a:last').tab('show')
-})

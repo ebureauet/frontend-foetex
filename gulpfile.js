@@ -181,8 +181,11 @@ gulp.task('makeicons', function(callback) {
 });
 
 gulp.task('img-optim', function () {
-  return gulp.src('src/images/{,*/}*.{jpg,gif,png}')
-    .pipe(imagemin())
+  return gulp.src('src/images/**/{,*/}*.{jpg,gif,png}')
+    .pipe(imagemin({
+      progressive : true,
+      optimizationLevel : 5
+    }))
     .pipe(gulp.dest('build/images/'));
 });
 

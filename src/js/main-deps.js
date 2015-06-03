@@ -1,4 +1,9 @@
-require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
+//require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
+require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js');
+require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js');
+require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js');
+require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js');
+require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js');
 require('../../bower_components/tablesaw/dist/stackonly/tablesaw.stackonly.js');
 require('./libs/equalheights.js');
 require('./general/carousel.js');
